@@ -1,0 +1,444 @@
+$reg: 'Akrobat-Regular'
+$bold: 'Akrobat-Bold'
+$light: 'Akrobat-Light'
+$mfc: #000
+$mfs: 18px
+$red: #f01741
+$yellow: #f0ca17
+
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+
+    
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+    -webkit-box-shadow: 0 0 0 30px #fee580 inset !important
+    // -webkit-text-fill-color: #c6c6c6 !important
+    
+
+    
+
+
+
+@keyframes sheen 
+    0% 
+        transform: translateX(0) skewY(-45deg) 
+  
+    20% 
+        transform: translateX(20.5em) skewY(-45deg) 
+    100%
+        transform: translateX(20.5em) skewY(-45deg)
+
+*
+    box-sizing: border-box
+    transition: .3s
+
+body
+    background-color: #f6f7fa
+    color: $mfc
+    font-family: $reg
+    font-size: $mfs
+    font-weight: 400
+    padding-bottom: 20px
+    min-width: 320px
+    
+ul
+    list-style: none
+    margin: 0
+    padding: 0
+
+a 
+    text-decoration: none
+    color: $mfc
+
+img
+    max-width: 100%
+
+button, input
+    outline: none
+
+
+.container
+    max-width: 1230px
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+    position: relative
+
+
+
+ 
+
+// header
+
+.social
+    position: absolute
+    top: 25px
+    right: 0px
+    li
+        margin: 0 18px
+    img
+        width: 35px
+
+.header-wrapper
+    max-width: 880px
+    margin: 0 auto
+
+.name-logo
+    align-items: center
+    padding-top: 30px
+
+.logo
+    width: 60px
+    height: 60px
+    background: url(../img/png/logo.png) no-repeat center
+    background-size: 60px 60px
+    display: block
+    margin-right: 30px
+
+.name
+    font-family: 'CharlatanDEMO', san-sefif
+    font-size: 70px
+    font-weight: normal
+    margin: 0
+
+.nav
+    font-size: 30px
+    font-weight: normal
+    justify-content: space-between
+    margin-top: 40px
+    margin-bottom: 15px
+    margin-left: -10px
+    margin-right:      
+    li
+        align-items: center
+        display: flex     
+        a
+            text-align: center
+            padding: 10px 15px
+            line-height: 0.9
+            border-radius: 25px
+            &:hover
+                background-color: $red
+                border-radius: 0px
+
+        
+            
+//header      
+
+
+
+
+            
+//main    
+
+
+.slick-prev,
+.slick-next
+    width: 66px
+    height: 66px
+    position: absolute
+    top: 50%
+    z-index: 100
+    font-size: 0
+    border: none
+    background-color: transparent
+    opacity: 0.2
+    transform: translateY(-50%)
+    &:hover
+        opacity: .8   
+.slick-next
+    right: 7px
+    background: url(../img/png/right-arrow.png) no-repeat center
+    background-size: 66px 66px
+.slick-prev
+    left: 7px
+    background: url(../img/png/left-arrow.png) no-repeat center
+    background-size: 66px 66px
+.slick-dots
+    position: absolute
+    bottom: 25px
+    width: 100%
+    text-align: center
+    li
+        display: inline-block
+        margin: 0 10px
+        font-size: 0
+        border: none
+        width: 25px
+        height: 25px
+        background: $yellow
+        border-radius: 50%
+        vertical-align : middle
+        transition: .1s
+        button
+            background: transparent
+            border: none
+            &:hover,&:focus
+                outline: none
+    .slick-active
+        height: 32px
+        width: 32px
+        background: $red
+        transition: .1s
+           
+
+
+
+.services
+    position: relative
+    margin: 120px 0px 80px 0px
+    div
+        justify-content: center
+        align-items: center
+        display: flex
+    img
+        width: 50%
+        padding: 100px 0px
+.recipes
+    background-color: #ff9832
+.make-offer
+    background-color: #fdcb00
+.order-online
+    background-color: #ff103f   
+.services-name
+    &:hover
+        box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.91)
+        transform: translate(-50%,-55%)
+    position: absolute
+    top: 0
+    left: 50%
+    background-color: #fff
+    padding: 30px 25px
+    font-size: 30px
+    transform: translate(-50%,-50%)
+    white-space: nowrap 
+    max-width: 100%
+    text-align: center
+
+
+
+
+.main
+    margin-bottom: 50px;
+.recipes-block
+    display: flex
+    flex-direction: column  
+.recipe
+    margin-bottom: 60px
+    position: relative
+    
+    &:before
+        content: ""
+        background-size: 50px 50px
+        width: 50px
+        height: 50px
+        display: block
+        background-image: url(../img/png/food.png)
+        position: absolute
+        top: 0px
+        left: 100px
+        transform: rotate(-35deg)
+        transition: .5s
+       
+    &:hover:before
+        
+        top: -37px
+        transition: .5s
+        
+    
+    &:hover
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.28)
+        transform: translateY(-4px)
+
+    
+
+        
+    
+.recipe_img
+    min-width: 400px
+    border: 0px 
+.recipe_content
+    padding: 30px 40px 0px 30px
+    position: relative
+    background-color: #fff
+    max-height: 500px;
+.recipe_title
+    font-size: 30px
+    margin: 0px 0px 10px 0px
+    white-space: nowrap 
+.recipe_date
+    font-size: 24px
+.recipe_text
+    font-size: 18px
+    margin-bottom: 0px
+    height: 70%
+    overflow: hidden
+    line-height: 1.25
+.like-comment
+    position: absolute
+    bottom: 15px
+    left: 50%
+    transform: translateX(-50%)
+.recipe_foto
+    overflow: hidden
+    max-height: 500px;
+.like
+    position: relative
+    margin-right: 90px
+    display: inline-block
+    &:before
+        content: ""
+        background-size: 25px 22px
+        width: 25px
+        height: 22px
+        display: block
+        background-image: url(../img/png/like.png)
+        position: absolute
+        bottom: 0px
+        left: -32px
+.coment
+    position: relative
+    display:inline-block
+    &:before
+        content: ""
+        background-size: 28px 28px
+        width: 28px
+        height: 28px
+        display: block
+        background-image: url(../img/png/chat.png)
+        position: absolute
+        bottom: -4px
+        left: -34px
+
+
+  
+
+
+.make-order_foto
+    position: relative
+    overflow: hidden
+    img
+        min-width: 400px
+       
+    
+    p
+        position: absolute
+        left: 50%
+        top: 23%
+        width: 80%
+        transform: translateX(-50%)
+        text-align: center
+        font-size: 24px
+        font-weight: 700
+.make-order_contacts
+    padding: 30px 35px
+    text-align: center
+    background-color: #fff
+    box-sizing: border-box
+    
+    h2
+        font-size: 24px
+        text-align: left
+    form
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 70%
+       
+        input
+            width: 100%
+            height: 1.8em
+            background-color: #fee580
+            border: 1px solid #c6c6c6
+            padding-left: 20px
+            font-size: 24px
+            
+            // &::placeholder
+            //     text-indent: 0px
+            //     transition:  500ms
+            // &:focus::placeholder
+            //     text-indent: 500px
+
+            +placeholder
+                text-indent: 0px
+                transition: text-indent 500ms
+                color: #000
+            &:focus
+                +placeholder
+                    text-indent: 500px
+                    color: #000
+            
+                
+                    
+           
+        button
+            background-color: $red
+            
+        
+            &:before 
+                content: ""
+                background-color: rgba(255,255,255,0.5)
+                height: 100%
+                width: 3em
+                display: block
+                position: absolute
+                top: 0
+                left: -4.5em
+                transform: skewX(-45deg) translateX(0)
+                transition: none
+                animation: 6s infinite sheen
+                filter: blur(15px)
+.button
+    width: 100%
+    font-size: 30px
+    text-align: center
+    border: none
+    padding: .2em 0
+    display: block
+    position: relative
+    overflow: hidden
+    transition: .2s
+    
+    &:hover
+        box-shadow: 3px 3px 8px -3px rgba(0,0,0,1)
+        transform: translateY(-3px)
+        transition: .2s
+.top-recipe_wrapper   
+    h3
+        text-align: center
+        font-size: 30px
+        font-weight: 400
+.top-recipe
+    margin-bottom: 25px
+    &_img
+        
+        img
+            width: 100%
+            
+    &_title
+        padding-left: 50px
+        padding-top: 20px
+
+
+.aside
+    
+    
+   
+
+        
+
+
+    
+
