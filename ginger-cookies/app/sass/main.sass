@@ -351,14 +351,11 @@ button, input
     h2
         font-size: 24px
         text-align: left
-    .form
+    form
         display: flex
         flex-direction: column
         justify-content: space-between
         height: 70%
-
-        .form-item
-            position: relative
        
         input
             width: 100%
@@ -367,20 +364,21 @@ button, input
             border: 1px solid #c6c6c6
             padding-left: 20px
             font-size: 24px
-            position: absolute
-            top: 0px
-            left: 0px
             
-          
-
-            // +placeholder
+            // &::placeholder
             //     text-indent: 0px
-            //     transition: text-indent 500ms
-            //     color: #000
-            // &:focus
-            //     +placeholder
-            //         text-indent: 500px
-            //         color: #000
+            //     transition:  500ms
+            // &:focus::placeholder
+            //     text-indent: 500px
+
+            +placeholder
+                text-indent: 0px
+                transition: text-indent 500ms
+                color: #000
+            &:focus
+                +placeholder
+                    text-indent: 500px
+                    color: #000
             
                 
                     
