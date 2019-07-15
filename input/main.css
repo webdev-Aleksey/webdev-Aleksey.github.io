@@ -30,7 +30,7 @@
   transition: .3s;
 }
 
-.form-input:focus~.form-label {
+.form-input:focus~.form-label,.form-input:not(:focus):valid~.form-label {
   bottom: -35px;
   font-size: 12px;
 }
