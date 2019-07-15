@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'CharlatanDEMO';
+  src: url('../fonts/CharlatanDEMO.eot');
+  src: url('../fonts/CharlatanDEMO.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/CharlatanDEMO.svg#CharlatanDEMO') format('svg'),
+       url('../fonts/CharlatanDEMO.ttf') format('truetype'),
+       url('../fonts/CharlatanDEMO.woff') format('woff'),
+       url('../fonts/CharlatanDEMO.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Akrobat-Light';
+  src: url('../fonts/Akrobat-Light.eot');
+  src: url('../fonts/Akrobat-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Akrobat-Light.svg#Akrobat-Light') format('svg'),
+       url('../fonts/Akrobat-Light.ttf') format('truetype'),
+       url('../fonts/Akrobat-Light.woff') format('woff'),
+       url('../fonts/Akrobat-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Akrobat-Regular';
+  src: url('../fonts/Akrobat-Regular.eot');
+  src: url('../fonts/Akrobat-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Akrobat-Regular.svg#Akrobat-Regular') format('svg'),
+       url('../fonts/Akrobat-Regular.ttf') format('truetype'),
+       url('../fonts/Akrobat-Regular.woff') format('woff'),
+       url('../fonts/Akrobat-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Akrobat-Bold';
+  src: url('../fonts/Akrobat-Bold.eot');
+  src: url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Akrobat-Bold.svg#Akrobat-Bold') format('svg'),
+       url('../fonts/Akrobat-Bold.ttf') format('truetype'),
+       url('../fonts/Akrobat-Bold.woff') format('woff'),
+       url('../fonts/Akrobat-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
