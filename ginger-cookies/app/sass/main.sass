@@ -400,6 +400,10 @@ button, input
                 transition: none
                 animation: 6s infinite sheen
                 filter: blur(15px)
+            &:hover
+                box-shadow: 3px 3px 8px -3px rgba(0,0,0,1)
+                transform: translateY(-3px)
+                transition: .2s
 .button
     width: 100%
     font-size: 30px
@@ -410,11 +414,20 @@ button, input
     position: relative
     overflow: hidden
     transition: .2s
+.form-item
+    position: relative
+.form-label
+    position: absolute
+    top: .5em
+    left: 1em
+
+
+.form-input:focus~.form-label,.form-input:not(:focus):valid~.form-label
+    transform: translate(-10px, -2em)
+    font-size: 14px
+
     
-    &:hover
-        box-shadow: 3px 3px 8px -3px rgba(0,0,0,1)
-        transform: translateY(-3px)
-        transition: .2s
+    
 .top-recipe_wrapper   
     h3
         text-align: center

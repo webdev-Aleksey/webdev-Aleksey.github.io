@@ -455,6 +455,15 @@ button, input {
         animation: 6s infinite sheen;
         -webkit-filter: blur(15px);
         filter: blur(15px); }
+      .make-order_contacts form button:hover {
+        -webkit-box-shadow: 3px 3px 8px -3px black;
+        box-shadow: 3px 3px 8px -3px black;
+        -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+        transform: translateY(-3px);
+        -webkit-transition: .2s;
+        -o-transition: .2s;
+        transition: .2s; }
 
 .button {
   width: 100%;
@@ -468,15 +477,20 @@ button, input {
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s; }
-  .button:hover {
-    -webkit-box-shadow: 3px 3px 8px -3px black;
-    box-shadow: 3px 3px 8px -3px black;
-    -webkit-transform: translateY(-3px);
-    -ms-transform: translateY(-3px);
-    transform: translateY(-3px);
-    -webkit-transition: .2s;
-    -o-transition: .2s;
-    transition: .2s; }
+
+.form-item {
+  position: relative; }
+
+.form-label {
+  position: absolute;
+  top: .5em;
+  left: 1em; }
+
+.form-input:focus ~ .form-label, .form-input:not(:focus):valid ~ .form-label {
+  -webkit-transform: translate(-10px, -2em);
+  -ms-transform: translate(-10px, -2em);
+  transform: translate(-10px, -2em);
+  font-size: 14px; }
 
 .top-recipe_wrapper h3 {
   text-align: center;
