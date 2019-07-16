@@ -470,24 +470,26 @@ button, input {
 
 .form-label {
   position: absolute;
-  top: .5em;
-  left: 1em; }
+  top: 8px;
+  left: 1em;
+  font-size: 24px; }
 
 .form-input:focus ~ .form-label, .form-input:not(:focus):valid ~ .form-label {
   -webkit-transform: translate(-10px, -2em);
   -ms-transform: translate(-10px, -2em);
   transform: translate(-10px, -2em);
-  font-size: 14px; }
+  font-size: 16px; }
 
-.top-recipe_wrapper h3 {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 400; }
+.top-recipe_wrapper {
+  margin-left: 30px; }
+  .top-recipe_wrapper h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400; }
 
 .top-recipe {
   margin-bottom: 25px; }
   .top-recipe_img img {
     width: 100%; }
   .top-recipe_title {
-    padding-left: 50px;
-    padding-top: 20px; }
+    padding-left: 20px; }
