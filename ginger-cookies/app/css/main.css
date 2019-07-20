@@ -489,7 +489,11 @@ button, input {
 
 .top-recipe {
   margin-bottom: 25px; }
-  .top-recipe_img img {
-    width: 100%; }
+  .top-recipe_img {
+    overflow: hidden; }
+    .top-recipe_img img {
+      width: 100%;
+      height: 120px; }
   .top-recipe_title {
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-right: 10px; }
