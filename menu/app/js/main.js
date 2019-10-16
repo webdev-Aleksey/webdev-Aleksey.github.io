@@ -30,8 +30,8 @@ function PopUpHide(){
 
 $(window).scroll(function(){
   if ($(this).scrollTop() > 150) {
-      $('.nav').addClass('fixed');
+      $('.header').addClass('fixed');
   } else {
-      $('.nav').removeClass('fixed');
+      $('.header').removeClass('fixed');
   }
 });

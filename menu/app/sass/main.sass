@@ -19,6 +19,7 @@ a
     
 *
     box-sizing: border-box
+ 
 input, textarea
     outline: none
 
@@ -28,15 +29,14 @@ input, textarea
     min-width: 200px
 .row
     flex-wrap: wrap
-.nav.fixed
+.header.fixed
     position: fixed
     top: 0
     z-index: 100
     transition: .5s
-    box-shadow: 0px 13px 17px -1px rgba(0,0,0,0.4)
-    .menu
-        padding: 20px
-   
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.3)
+    width: 100%
+    
     .hide
         display: none
 
@@ -44,13 +44,13 @@ input, textarea
 .container
     max-width: 1200px
     margin: 0 auto
+    position: relative
 
 .nav
     background-color: #fff
     width: 100%
     height: 100px
     top: -70px
-    transition: .5s
     
 
 
@@ -58,7 +58,7 @@ input, textarea
     justify-content: space-between
     align-items: center
     position: relative
-    margin-top: 15px
+    
     z-index: 500
     li
         align-items: center
@@ -151,14 +151,75 @@ input, textarea
 
 
 
-.search
+.search-wrapper
     position: relative
-    .find
+    background-color: $wight
+    .form-search
+        position: relative
+    .search
+        padding: 1.3em
+        width: 100%
+        box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.3)
+        border: none
+        border-radius: 5px
+    .find-wrapper
         position: absolute
         top: 0px
         right: 0px
-        width: 20px
+        height: 100%
+        .find
+            width: 35px
+            height: 100%
+            border: none
+            background: $red
+            border-radius: 0px 5px 5px 0px
+            cursor: pointer 
+        i
+            position: absolute
+            top: 50%
+            left: 50%
+            color: $wight
+            transform: translate(-50%, -50%)
+
+            
+
+    
         
-    input
+    
+
+.basket-wrapper
+    text-align: center
+    height: 100%
+    margin-left: 60px
+    .basket
+        background: $red
+        cursor: pointer
         width: 100%
+        height: 100%
+        display: flex
+        font-size: 18px
+        justify-content: center
+        align-items: center
+        span
+            display: flex
+        
+        
+            
+           
+
+            
+
+
+        
+        
+       
+
+            
+
+            
+
+       
+
+        
+        
         

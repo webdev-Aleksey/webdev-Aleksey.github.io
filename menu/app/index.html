@@ -18,7 +18,7 @@
     <div class="popup-bac" id="popup-1">
 
         <form action="">
-            <a href="javascript:PopUpHide()" class="hide-popup"></a>
+            <a href="javascript:PopUpHide()" class="close-popup"></a>
             <div class="form-item">
                 <label for="">Имя</label>
                 <input type="text" name="name" placeholder="Введите ваше имя">
@@ -61,7 +61,7 @@
 
         <nav class="top-nav" id="top-nav">
             <div class="container row">
-                <ul class="help row">
+                <ul class="help row hide">
                     <li><a href="#">Условия доставки</a></li>
                     <li><a href="#">Условия оплаты</a></li>
                     <li><a href="#">Условия возврата</a></li>
@@ -135,14 +135,21 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="search col-10">
-                        <form action="">
-                            <input type="search" name="search" id="search" search>
-                            <input type="submit" value="" class="find">
+                    <div class="col-9">
+                        <form class="form-search" action="">
+                            <input type="search" name="search" id="search" class="search" placeholder="Введите каталожный номер или название запасной части">
+                            <div class="find-wrapper">
+                                <input type="submit" value="" class="find">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            
                         </form>
                     </div>
-                    <div class="basket col-2">
-                        <a href="">Корзина</a>
+                    <div class="col-3">
+                        <div class="basket-wrapper hide">
+                                <a href="#" class="basket"><span>Корзина</span></a>
+                        </div>
+                       
                     </div>
                 </div>
             </div>
