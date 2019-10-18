@@ -5,14 +5,19 @@ header
     background-color: #43cb71
     background: url("../img/header-back.jpg") no-repeat
     background-size: cover
+.toggle-hamburger
+    position: absolute
+    top: 30px
+    left: 30px
+
    
 
+
+
+
 nav
-    padding: 50px 0px 50px 40px
+    padding: 50px 0px 50px 0px
     
-
-
-
 .nav-btn
     font-size: 18px
     text-transform: uppercase
@@ -21,24 +26,32 @@ nav
     transition: .5s
     border-radius: 2em
     display: block;
+    text-align: center
     &:hover
         padding: .7em 2em
         margin: -0.7em -2em
         background-color: $white
         transition: .3s
         color: $green
+        box-shadow: 0px 10px 37px 0px rgba(0, 0, 0, 0.4)
        
+.nav-btn_wrapper
+    margin-left: 60px
+
+
 
 .header-img
     position: relative
+    
     img
         position: absolute
         top: -45px
         left: -55px
         width: 120%
+        
 .header-title
     padding-top: 30px
-    padding-bottom: 80px
+    padding-bottom: 90px
     h1
         font-weight: 900
         text-transform: uppercase
