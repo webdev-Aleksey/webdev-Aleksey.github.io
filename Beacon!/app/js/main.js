@@ -1,3 +1,6 @@
+
+/// Счётчик Товаров///
+
 $(document).ready(function () {
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
@@ -13,6 +16,9 @@ $(document).ready(function () {
         $input.change();
         return false;
     });
+
+
+/// Анимация бургер-меню ///
 
     (function () {
 
@@ -34,6 +40,7 @@ $(document).ready(function () {
 
     })();
 
+/// Скрыть показать меню ///
 
     $('#toggle-hamburger').on('click', function(e){
 
