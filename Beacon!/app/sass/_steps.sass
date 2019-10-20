@@ -9,9 +9,11 @@
     top: 0
     right: 0
     height: 100%
+    width: 400px
+    background: url('/img/wall-form.jpg') no-repeat
+    background-size: cover
 
-    .wall
-        height: 100%
+    
 
 .top-beacon
     position: absolute
@@ -63,10 +65,13 @@
 
 .form-wrapper
     padding: 50px 0px
+   
+    
 
 .form
     text-align: center
-
+    position: relative
+    z-index: 998
     input
         font-size: 24px
         width: 100%
@@ -76,6 +81,8 @@
         border: 2px solid $white
         background-color: rgba(255, 255, 255, 0.5)
         color: $black
+        position: relative
+        z-index: 999
 
         &::placeholder
             color: $black
@@ -91,10 +98,12 @@
     margin: 20px 0px
     transition: .3s
     font-weight: 700
+    position: relative
+    z-index: 1000
 
     &:hover
         box-shadow: 0px 15px 29px 0px rgba(60, 171, 112, 0.63)
         transition: .3s
-        transform: scale(1.02)
+        
 
     
