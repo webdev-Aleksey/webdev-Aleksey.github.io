@@ -3,6 +3,7 @@ const gulp = require('gulp'),
     concatCss = require('gulp-concat-css'),
     cleanCSS = require('gulp-clean-css'),
     autoprefixer = require('gulp-autoprefixer'),
+    purgecss = require('gulp-purgecss'),
     browserSync = require('browser-sync').create();
 
 gulp.task('serve', ['sass'], function() {
@@ -40,5 +41,18 @@ gulp.task('autoprefixer', function () {
     }))
     .pipe(gulp.dest('app/css'))
 });
+
+gulp.task('purgecss', function() {
+    return gulp
+      .src('dist/css/*.css')
+      .pipe(
+        purgecss({
+          content: ['app/*.html']
+        })
+      )
+      .pipe(gulp.dest('dist/css'))
+  })
+
+
 
 gulp.task('default', ['serve']);
