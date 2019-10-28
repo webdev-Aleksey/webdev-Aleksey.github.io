@@ -121,8 +121,8 @@ function fixStepIndicator(n) {
   // Эта функция удаляет «активный» класс всех шагов ...
   var i, x = document.getElementsByClassName("step");
   for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
+    x[i].className = x[i].className.replace(" step-active", "");
   }
   // ... и добавляет «активный» класс на текущий шаг:
-  x[n].className += " active";
+  x[n].className += " step-active";
 }

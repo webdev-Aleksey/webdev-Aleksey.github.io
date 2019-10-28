@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.min.css">
+    <!-- <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.min.css"> -->
     <link rel="stylesheet" href="./css/main.css">
 
     <title>Beacon</title>
@@ -212,7 +211,7 @@
 
             <ul class="row step-item_wrapper justify-content-around col-lg-6 offset-lg-3">
                 <li class="">
-                    <a href="#" class="step step-active">step 1</a>
+                    <a href="#" class="step">step 1</a>
                 </li>
                 <li class="">
                     <a href="#" class="step">step 2</a>
@@ -231,54 +230,55 @@
 
             <div class="form-wrapper col-md-6  offset-md-3">
                 <form action="" class="form" id="form" autocomplete="on">
-
-                    <div class="tab">
-                        <label class="form-label" for="name"></label>
-                        <input oninput="this.className = ''" type="text" name="name" required
-                            placeholder="Enter First Name">
-
-                        <label class="form-label" for="name"></label>
-                        <input oninput="this.className = ''" type="text" name="name" required
-                            placeholder="Enter Last Name" >
-
-                        <label class="form-label" for="name"></label>
-                        <input oninput="this.className = ''" type="text" name="name" required
-                            placeholder="Enter Last Name">
-                    </div>
-
-                    <div class="tab">
+                    <div class="tab-wrapper">
+                        <div class="tab">
                             <label class="form-label" for="name"></label>
                             <input oninput="this.className = ''" type="text" name="name" required
                                 placeholder="Enter First Name">
-    
+
                             <label class="form-label" for="name"></label>
                             <input oninput="this.className = ''" type="text" name="name" required
                                 placeholder="Enter Last Name">
-    
+
                             <label class="form-label" for="name"></label>
                             <input oninput="this.className = ''" type="text" name="name" required
                                 placeholder="Enter Last Name">
                         </div>
 
                         <div class="tab">
-                                <label class="form-label" for="name"></label>
-                                <input oninput="this.className = ''" type="text" name="name" required
-                                    placeholder="Enter First Name">
-        
-                                <label class="form-label" for="name"></label>
-                                <input oninput="this.className = ''" type="text" name="name" required
-                                    placeholder="Enter Last Name">
-        
-                                <label class="form-label" for="name"></label>
-                                <input oninput="this.className = ''" type="text" name="name" required
-                                    placeholder="Enter Last Name">
+                            <label class="form-label" for="name"></label>
+                            <input oninput="this.className = ''" type="text" name="name" required
+                                placeholder="Enter First Name">
+
+                            <label class="form-label" for="name"></label>
+                            <input oninput="this.className = ''" type="text" name="name" required
+                                placeholder="Enter Last Name">
+
+                            <label class="form-label" for="name"></label>
+                            <input oninput="this.className = ''" type="text" name="name" required
+                                placeholder="Enter Last Name">
                         </div>
-                    
+
+                        <div class="tab">
+                            <label class="form-label" for="name"></label>
+                            <input oninput="this.className = ''" type="text" name="name" required
+                                placeholder="Enter First Name">
+
+                            <label class="form-label" for="name"></label>
+                            <input oninput="this.className = ''" type="text" name="name" required
+                                placeholder="Enter Last Name">
+
+                            <label class="form-label" for="name"></label>
+                            <input oninput="this.className = ''" type="text" name="name" required
+                                placeholder="Enter Last Name">
+                        </div>
+                    </div>
 
 
 
-                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
                 </form>
 
             </div>

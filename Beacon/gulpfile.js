@@ -7,9 +7,7 @@ let gulp = require('gulp'),
 
     
 gulp.task('serve', ['sass'], function() {
-    browserSync.init({
-        server: "app/"
-    });
+    browserSync.init({server: "app/"});
     gulp.watch("app/sass/*.sass", ['sass']);
     gulp.watch("app/*.html").on('change', browserSync.reload);
     gulp.watch("app/js/*.js").on('change', browserSync.reload);
@@ -18,8 +16,8 @@ gulp.task('serve', ['sass'], function() {
 
 gulp.task('sass', function() {
     return gulp.src("app/sass/main.sass")
-        .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(autoprefixer())
+        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(autoprefixer({overrideBrowserslist: ['last 8 versions'], cascade: false}))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
 });
@@ -33,10 +31,7 @@ gulp.task('concat-css', function () {
 
 gulp.task('autoprefixer', function () {
     gulp.src('app/css/*.css')
-    .pipe(autoprefixer({
-        overrideBrowserslist: ['last 8 versions'],
-        cascade: false
-    }))
+    .pipe(autoprefixer({overrideBrowserslist: ['last 8 versions'], cascade: false}))
     .pipe(gulp.dest('app/css'))
 });
 
@@ -44,11 +39,7 @@ gulp.task('autoprefixer', function () {
 gulp.task('purgecss', function() {
     return gulp
       .src('dist/css/*.css')
-      .pipe(
-        purgecss({
-          content: ['app/*.html']
-        })
-      )
+      .pipe(purgecss({content: ['app/*.html']}))
       .pipe(gulp.dest('dist/css'))
   })
 
