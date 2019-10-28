@@ -3,7 +3,9 @@ let gulp = require('gulp'),
     concatCss = require('gulp-concat-css'),
     autoprefixer = require('gulp-autoprefixer'),
     purgecss = require('gulp-purgecss'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    uglify = require('gulp-uglify')
+    
 
     
 gulp.task('serve', ['sass'], function() {
@@ -16,7 +18,7 @@ gulp.task('serve', ['sass'], function() {
 
 gulp.task('sass', function() {
     return gulp.src("app/sass/main.sass")
-        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(autoprefixer({overrideBrowserslist: ['last 8 versions'], cascade: false}))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
@@ -38,10 +40,16 @@ gulp.task('autoprefixer', function () {
 
 gulp.task('purgecss', function() {
     return gulp
-      .src('dist/css/*.css')
-      .pipe(purgecss({content: ['app/*.html']}))
+      .src('app/css/*.css')
+      .pipe(purgecss({content: [('app/*.html'),('app/js/*js')]}))
       .pipe(gulp.dest('dist/css'))
-  })
+  });
+
+  gulp.task('uglify', function() {
+    gulp.src('app/js/*.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('dist/js'))
+  });
 
 
 
