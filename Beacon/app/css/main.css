@@ -10588,7 +10588,7 @@ template {
   top: 0;
   right: 0;
   height: 100%;
-  width: 400px;
+  width: 330px;
   background: url("../img/wall-form.jpg") no-repeat;
   background-size: cover;
 }
@@ -10599,8 +10599,8 @@ template {
   top: -35px;
   right: 0px;
   position: absolute;
-  height: 620px;
-  width: 500px;
+  height: 615px;
+  width: 430px;
 }
 
 .top-beacon {
@@ -10631,9 +10631,8 @@ template {
   position: relative;
 }
 
-.step-item_wrapper {
+.step-wrapper {
   padding: 50px 0px;
-  margin-right: 0px !important;
 }
 
 .step {
@@ -10647,10 +10646,10 @@ template {
 
 .step-active {
   background: #fff;
-  -webkit-box-shadow: 0px 15px 29px 0px rgba(60, 171, 112, 0.63);
-  box-shadow: 0px 15px 29px 0px rgba(60, 171, 112, 0.63);
   padding: .3em 1.2em;
   border-radius: 2em;
+  -webkit-box-shadow: 0em 0.5em 1em rgba(60, 171, 112, 0.63);
+  box-shadow: 0em 0.5em 1em rgba(60, 171, 112, 0.63);
 }
 
 .step.finish {
@@ -10742,9 +10741,33 @@ input.invalid {
   display: none;
 }
 
+.tab-item {
+  position: relative;
+}
+
+.form-label {
+  position: absolute;
+  left: 25px;
+  top: 32px;
+  font-size: 24px;
+  z-index: 1000;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+input:focus ~ .form-label, input:not(:focus):valid ~ .form-label {
+  top: -10px;
+  left: 16px;
+  font-size: 18px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
 .tab-wrapper {
   padding-bottom: 30px;
-  min-height: 300px;
+  height: 320px;
 }
 
 #prevBtn, #nextBtn {
@@ -10769,7 +10792,7 @@ input.invalid {
 }
 
 #prevBtn {
-  margin-right: 50px;
+  margin-right: 10px;
 }
 
 .footer {
@@ -10784,11 +10807,11 @@ input.invalid {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 774px;
-  height: 670px;
+  width: 700px;
+  height: 605px;
   background: url("../img/hand.png") no-repeat;
   background-size: cover;
-  z-index: 1;
+  z-index: 0;
 }
 
 .tel {
@@ -10895,11 +10918,13 @@ input.invalid {
     -ms-flex-direction: column;
     flex-direction: column;
   }
-  .step-item_wrapper {
+  .step-wrapper {
     margin: 0px;
   }
+}
+
+@media (max-width: 768px) {
   .product-description {
-    font-size: 22px;
     height: auto;
   }
 }
@@ -10915,11 +10940,23 @@ input.invalid {
   .tel {
     font-size: 18px;
   }
-  .step-item a {
+  .step {
     padding: 0.2em 0.8em;
     font-size: 18px;
   }
   .steps-description {
+    font-size: 22px;
+  }
+  .step-wrapper {
+    padding: 20px 0px;
+  }
+  .steps-title {
+    font-size: 26px;
+  }
+  .form-wrapper {
+    padding: 20px 0px 40px 0px;
+  }
+  #prevBtn, #nextBtn {
     font-size: 22px;
   }
 }

@@ -78,7 +78,7 @@
 
             <div class="row product-wrapper">
 
-                <div class="col-lg-3 product-card_wrapper align-items-center">
+                <div class="col-lg-3 col-md-6 product-card_wrapper align-items-center">
                     <div class="product-card">
                         <h3 class="product-title">asensor</h3>
                         <div class="product-img align-items-center">
@@ -106,7 +106,7 @@
 
                 </div>
 
-                <div class="col-lg-3 product-card_wrapper">
+                <div class="col-lg-3 col-md-6 product-card_wrapper">
                     <div class="product-card">
                         <h3 class="product-title">arm cortex - m</h3>
                         <div class="product-img">
@@ -132,7 +132,7 @@
 
                 </div>
 
-                <div class="col-lg-3 product-card_wrapper">
+                <div class="col-lg-3 col-md-6 product-card_wrapper">
                     <div class="product-card">
                         <h3 class="product-title">estimote proximity
                             beacons </h3>
@@ -159,7 +159,7 @@
 
                 </div>
 
-                <div class="col-lg-3 product-card_wrapper">
+                <div class="col-lg-3 col-md-6 product-card_wrapper">
                     <div class="product-card">
                         <h3 class="product-title">aprilbeacon 227L
                             (150m range)
@@ -209,7 +209,7 @@
 
             <h2 class="steps-title">A couple of steps to make your store popular</h2>
 
-            <ul class="row step-item_wrapper justify-content-around col-lg-6 offset-lg-3">
+            <ul class="row step-wrapper justify-content-around col-lg-6 offset-lg-3">
                 <li class="">
                     <a href="#" class="step">step 1</a>
                 </li>
@@ -230,55 +230,86 @@
 
             <div class="form-wrapper col-md-6  offset-md-3">
                 <form action="" class="form" id="form" autocomplete="on">
+
                     <div class="tab-wrapper">
+
                         <div class="tab">
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter First Name">
 
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter Last Name">
+                            <div class="tab-item">
 
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter Last Name">
+                                <input class="" oninput="this.className = ''" type="text" name="first name" required
+                                    placeholder="">
+                                <label class="form-label" for="first name">Enter First Name</label>
+                            </div>
+
+                            <div class="tab-item">
+
+                                <input class="" oninput="this.className = ''" type="text" name="last name" required
+                                    placeholder="">
+                                <label class="form-label" for="last name">Enter Last Name</label>
+                            </div>
+
+                            <div class="tab-item">
+                                <input class="" oninput="this.className = ''" type="text" name="email" required
+                                    placeholder="">
+                                <label class="form-label" for="email">Enter Email</label>
+                            </div>
                         </div>
 
                         <div class="tab">
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter First Name">
 
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter Last Name">
+                            <div class="tab-item">
 
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter Last Name">
+                                <input class="" oninput="this.className = ''" type="text" name="first name" required
+                                    placeholder="">
+                                <label class="form-label" for="first name">Enter First Name</label>
+                            </div>
+
+                            <div class="tab-item">
+
+                                <input class="" oninput="this.className = ''" type="text" name="last name" required
+                                    placeholder="">
+                                <label class="form-label" for="last name">Enter Last Name</label>
+                            </div>
+
+                            <div class="tab-item">
+                                <input class="" oninput="this.className = ''" type="text" name="email" required
+                                    placeholder="">
+                                <label class="form-label" for="email">Enter Email</label>
+                            </div>
                         </div>
 
                         <div class="tab">
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter First Name">
 
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter Last Name">
+                            <div class="tab-item">
 
-                            <label class="form-label" for="name"></label>
-                            <input oninput="this.className = ''" type="text" name="name" required
-                                placeholder="Enter Last Name">
+                                <input class="" oninput="this.className = ''" type="text" name="first name" required
+                                    placeholder="">
+                                <label class="form-label" for="first name">Enter First Name</label>
+                            </div>
+
+                            <div class="tab-item">
+
+                                <input class="" oninput="this.className = ''" type="text" name="last name" required
+                                    placeholder="">
+                                <label class="form-label" for="last name">Enter Last Name</label>
+                            </div>
+
+                            <div class="tab-item">
+                                <input class="" oninput="this.className = ''" type="text" name="email" required
+                                    placeholder="">
+                                <label class="form-label" for="email">Enter Email</label>
+                            </div>
                         </div>
+
                     </div>
 
 
 
-
-                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
-                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    <div class="form-btn_wrapper d-flex justify-content-around">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
                 </form>
 
             </div>
