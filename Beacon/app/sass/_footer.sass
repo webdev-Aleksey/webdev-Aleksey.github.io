@@ -29,6 +29,7 @@
     a
         color: $white
         text-shadow: 0px 2px 3px rgba(21,206,44,0.5)
+        position: relative
 
 .mail
     text-align: center
@@ -41,6 +42,7 @@
     a
         color: $white
         text-shadow: 0px 2px 3px rgba(21,206,44,0.7)
+        position: relative
         
 
 .social-icon
@@ -61,7 +63,7 @@
 
         &:hover
             background: $white
-            box-shadow: 0px 0px 21px 0px rgba(9, 9, 9, 0.28)
+            box-shadow: 0px 0px 21px 0px rgba(9, 9, 9, 0.5)
             transition: .3s
 
         &:hover i
@@ -75,13 +77,15 @@
 .other-link
     padding: 15px 0px
     text-align: center
+    
 
 
     a
         font-size: 20px
         color: $white
         margin: 22px 22px
-        display: block
+        display: inline-block
+        position: relative
 
 .FDH
     text-align: center
@@ -90,3 +94,17 @@
     span
         font-size: 16px
         color: $white
+
+.h-line
+    &:before
+        content: ''
+        height: 0.1em
+        width: 0
+        position: absolute
+        bottom: 0
+        right: 0
+        background-color: $white
+        transition: all 0.3s
+    &:hover:before
+        width: 100%
+        left: 0
