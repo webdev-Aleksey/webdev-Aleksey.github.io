@@ -8,6 +8,11 @@
     padding-top: 10px
     background-color: #FCB03F
     overflow: hidden
+    .container
+        position: relative
+        height: 100%
+        min-height: 720px
+        
     
 .logo
     width: 95px
@@ -24,6 +29,7 @@
     background: linear-gradient(76.17deg, #C90D0D 21.38%, #FB472F 97.04%)
     padding: .5em 1em .5em 2.5em
     border-radius: 25px
+
     &:before
         content:  ""
         position: absolute
@@ -35,12 +41,8 @@
         background: url(../img/phone.png) no-repeat center
         background-size: cover
 
-
-
 .container
     position: relative
-
-    
 
 .top-info
     font-family: $sf
@@ -51,6 +53,7 @@
 
 .nav
     margin-top: 25px
+
     &-item
         padding: .5em 1em
         position: relative
@@ -61,6 +64,7 @@
         &:hover
             color: $green
             transition: .3s
+
         &:before
             content: ""
             display: block
@@ -72,6 +76,7 @@
             right: 0
             transition: 0.3s
             z-index: -1
+
         &:hover:before
             top: 0
             left: 0
@@ -82,6 +87,7 @@
             transition: .3s
             z-index: -1
             display: block
+
         &:after
             content: ""
             display: block
@@ -94,6 +100,7 @@
             left: 0
             transition: 0.3s
             z-index: -1
+
         &:hover:after
             bottom: 0
             left: auto
@@ -105,7 +112,6 @@
             z-index: -1
             display: block
 
-
     li
         display: inline-block
 
@@ -116,6 +122,7 @@
     position:  absolute
     right: 100px
     top: 0px
+
     &-item
         display: flex
         border: 2px solid $white
@@ -125,13 +132,36 @@
         align-items: center
         justify-content: center
         margin-right: 5px
+        position: relative
+        box-sizing: border-box
+
+        &:before
+            content: ""
+            border-radius: 50%
+            width: 33px
+            height: 33px
+            border: 2px solid $white
+            position: absolute
+            box-sizing: border-box
+            transition: .3s
+            
+        &:hover
+            box-shadow: 0px 0px 8px 3px rgba(255,255,0,0.6)
+            transition: .3s
+
+            &:before
+                box-shadow: inset 0px 0px 6px 3px rgba(255,255,0,0.6)
+                transition: .3s
+
         i
             color: $white
+
 .enter
     position:  absolute
     right: 0px
     top: 0px
     width: 90px
+
     .reg
         position: absolute
         top: -15px
@@ -142,6 +172,7 @@
         display: inline-block
         border-radius: 0px 0px 25px 25px
         transition: .3s
+
         &:before
             content: ""
             position: absolute
@@ -151,7 +182,6 @@
             height: 32px
             display: inline-block
             background: url(../img/reg.png) center
-        
 
     .profile
         position: absolute
@@ -163,6 +193,7 @@
         display: inline-block
         border-radius: 0px 0px 25px 25px
         transition: .3s
+
         &:before
             content: ""
             position: absolute
@@ -177,10 +208,8 @@
     transform: translateY(5px)
     transition: .3s
 
-
 .header-info
     margin-top: 80px
-    
     
     &_btn
         background: linear-gradient(71.29deg, #479F11 10.94%, #69BE13 104.08%)
@@ -188,6 +217,7 @@
         border: none
         cursor: pointer
         transition: .3s
+
         &:hover
             background: $white
             color: $orange
@@ -199,12 +229,14 @@
     font-weight: bold
     padding: 1.5em 1.5em
     border-radius: 3em
+
 .tagline
     color: $black
     font-size: 50px
     font-family: $ing
     font-weight: 400
     margin: 20px 0px
+
 .description
     font-family: $sf
     font-size: 18px
@@ -215,13 +247,61 @@
 
 
 
-       
+.cashback
+    position: absolute
+    bottom: 30px
+    left: 16px
+    width: 100%
+    background: $white
+    border-radius: 20px
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1)
+    padding: 1em
+    
 
       
 
+.cashback-description
+    text-align: center
+    font-family: $ing
+    font-size: 25px
+    line-height: 45px
+    font-weight: bold
+
+    span
+        color: $orange
+        text-transform: uppercase
+
+        &:nth-child(4)
+            color: $black
+
+.cashback-btn
+    background: transparent
+    border: 3px solid $green
+    color: $green
+    cursor: pointer
+
+    &_wrapper
+
+        align-items: center
+        display: flex   
+        justify-content: center
 
 
+.ellips-1,.ellips-2
+    position: absolute
+    background: url(../img/ellips.png) no-repeat
+    background-size: cover
 
+.ellips-1
+    width: 170px
+    height: 170px
+    left: -105px
+    top: 16px
 
-    
+.ellips-2
+    right: 110px
+    top: -70px
+    width: 110px
+    height: 110px
+
     
