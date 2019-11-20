@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'inglobal';
+    src: url('inglobal.eot');
+    src: url('inglobal.eot?#iefix') format('embedded-opentype'),
+        url('inglobal.woff2') format('woff2'),
+        url('inglobal.woff') format('woff'),
+        url('inglobal.svg#inglobal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'inglobal';
+    src: url('inglobal-Bold.eot');
+    src: url('inglobal-Bold.eot?#iefix') format('embedded-opentype'),
+        url('inglobal-Bold.woff2') format('woff2'),
+        url('inglobal-Bold.woff') format('woff'),
+        url('inglobal-Bold.svg#inglobal-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+

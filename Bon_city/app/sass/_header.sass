@@ -1,0 +1,227 @@
+@import "vars"
+
+.header
+    height: 100vh
+    background:  url(../img/header_bg.jpg) no-repeat
+    background-position: center top
+    background-size: cover
+    padding-top: 10px
+    background-color: #FCB03F
+    overflow: hidden
+    
+.logo
+    width: 95px
+    height: 79px
+    background: url(../img/logo.png)
+    display: inline-block
+    margin-right: 25px
+
+.tel
+    display: inline-block
+    font-size: 17px
+    font-weight: 600
+    position: relative
+    background: linear-gradient(76.17deg, #C90D0D 21.38%, #FB472F 97.04%)
+    padding: .5em 1em .5em 2.5em
+    border-radius: 25px
+    &:before
+        content:  ""
+        position: absolute
+        top: 5px
+        left: 10px
+        width: 25px
+        height: 25px
+        display: block
+        background: url(../img/phone.png) no-repeat center
+        background-size: cover
+
+
+
+.container
+    position: relative
+
+    
+
+.top-info
+    font-family: $sf
+
+    a
+        color: $white
+        transition: .3s
+
+.nav
+    margin-top: 25px
+    &-item
+        padding: .5em 1em
+        position: relative
+        z-index: 1
+        font-size: 14px
+        font-weight: bold
+
+        &:hover
+            color: $green
+            transition: .3s
+        &:before
+            content: ""
+            display: block
+            position: absolute
+            background-color: $white
+            width: 0%
+            height: 100%
+            top: 0
+            right: 0
+            transition: 0.3s
+            z-index: -1
+        &:hover:before
+            top: 0
+            left: 0
+            width: 100%
+            position: absolute;
+            content: ''
+            height: 100%
+            transition: .3s
+            z-index: -1
+            display: block
+        &:after
+            content: ""
+            display: block
+            position: absolute
+            background-color: $green
+            width: 0%
+            height: 4px
+            bottom: 0
+            right: auto
+            left: 0
+            transition: 0.3s
+            z-index: -1
+        &:hover:after
+            bottom: 0
+            left: auto
+            right: 0
+            width: 100%
+            position: absolute;
+            content: ''
+            transition: .3s
+            z-index: -1
+            display: block
+
+
+    li
+        display: inline-block
+
+
+
+.social
+    display: flex
+    position:  absolute
+    right: 100px
+    top: 0px
+    &-item
+        display: flex
+        border: 2px solid $white
+        border-radius: 50%
+        width: 33px
+        height: 33px
+        align-items: center
+        justify-content: center
+        margin-right: 5px
+        i
+            color: $white
+.enter
+    position:  absolute
+    right: 0px
+    top: 0px
+    width: 90px
+    .reg
+        position: absolute
+        top: -15px
+        left: 0
+        width: 40px
+        height: 50px
+        background-color: #F85B2A
+        display: inline-block
+        border-radius: 0px 0px 25px 25px
+        transition: .3s
+        &:before
+            content: ""
+            position: absolute
+            bottom: 4px
+            left: 4px
+            width: 32px
+            height: 32px
+            display: inline-block
+            background: url(../img/reg.png) center
+        
+
+    .profile
+        position: absolute
+        top: -15px
+        right: 0
+        width: 40px
+        height: 50px
+        background-color: #37B4EA
+        display: inline-block
+        border-radius: 0px 0px 25px 25px
+        transition: .3s
+        &:before
+            content: ""
+            position: absolute
+            bottom: 4px
+            left: 4px
+            width: 32px
+            height: 32px
+            display: inline-block
+            background: url(../img/profile.png) center
+
+.reg:hover,.profile:hover
+    transform: translateY(5px)
+    transition: .3s
+
+
+.header-info
+    margin-top: 80px
+    
+    
+    &_btn
+        background: linear-gradient(71.29deg, #479F11 10.94%, #69BE13 104.08%)
+        color: $white
+        border: none
+        cursor: pointer
+        transition: .3s
+        &:hover
+            background: $white
+            color: $orange
+            transition: .3s
+
+.btn
+    font-family: $ing
+    font-size: 15px
+    font-weight: bold
+    padding: 1.5em 1.5em
+    border-radius: 3em
+.tagline
+    color: $black
+    font-size: 50px
+    font-family: $ing
+    font-weight: 400
+    margin: 20px 0px
+.description
+    font-family: $sf
+    font-size: 18px
+    color: $black
+    line-height: 29px
+    font-weight: 300
+    margin-bottom: 30px
+
+
+
+       
+
+      
+
+
+
+
+
+    
+    
