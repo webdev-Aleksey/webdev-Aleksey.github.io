@@ -18,7 +18,7 @@ gulp.task('serve', ['sass'], function() {
 
 gulp.task('sass', function() {
     return gulp.src("app/sass/main.sass")
-        .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(sass({outputStyle: 'nested'})) // outputStyle: nested expanded compact compressed
         .pipe(autoprefixer({overrideBrowserslist: ['last 8 versions'], cascade: false}))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());

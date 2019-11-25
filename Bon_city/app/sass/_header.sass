@@ -1,19 +1,17 @@
-@import "vars"
-
 .header
-    height: 100vh
     background:  url(../img/header_bg.jpg) no-repeat
     background-position: center top
     background-size: cover
     padding-top: 10px
-    background-color: #FCB03F
+    padding-bottom: 50px
+    background-color: #FDB334
     overflow: hidden
+    margin-bottom: -5px
+
     .container
         position: relative
-        height: 100%
         min-height: 720px
-        
-    
+
 .logo
     width: 95px
     height: 79px
@@ -41,11 +39,8 @@
         background: url(../img/phone.png) no-repeat center
         background-size: cover
 
-.container
-    position: relative
-
 .top-info
-    font-family: $sf
+    font-family: $main-font
 
     a
         color: $white
@@ -114,8 +109,6 @@
 
     li
         display: inline-block
-
-
 
 .social
     display: flex
@@ -208,9 +201,12 @@
     transform: translateY(5px)
     transition: .3s
 
+.header-info-wrapper
+    margin-bottom: 290px
+
 .header-info
     margin-top: 80px
-    
+
     &_btn
         background: linear-gradient(71.29deg, #479F11 10.94%, #69BE13 104.08%)
         color: $white
@@ -224,7 +220,7 @@
             transition: .3s
 
 .btn
-    font-family: $ing
+    font-family: $second-font
     font-size: 15px
     font-weight: bold
     padding: 1.5em 1.5em
@@ -233,36 +229,28 @@
 .tagline
     color: $black
     font-size: 50px
-    font-family: $ing
+    font-family: $second-font
     font-weight: 400
     margin: 20px 0px
 
 .description
-    font-family: $sf
+    font-family: $main-font
     font-size: 18px
     color: $black
     line-height: 29px
     font-weight: 300
     margin-bottom: 30px
 
-
-
 .cashback
-    position: absolute
-    bottom: 30px
-    left: 16px
-    width: 100%
+    position: relative
     background: $white
     border-radius: 20px
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1)
     padding: 1em
-    
-
-      
 
 .cashback-description
     text-align: center
-    font-family: $ing
+    font-family: $second-font
     font-size: 25px
     line-height: 45px
     font-weight: bold
@@ -281,11 +269,9 @@
     cursor: pointer
 
     &_wrapper
-
         align-items: center
         display: flex   
         justify-content: center
-
 
 .ellips-1,.ellips-2
     position: absolute
@@ -303,5 +289,3 @@
     top: -70px
     width: 110px
     height: 110px
-
-    
