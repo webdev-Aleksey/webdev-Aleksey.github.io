@@ -1,3 +1,52 @@
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Regular.eot");
+  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Light.eot");
+  src: local("SF UI Display Light"), local("SFUIDisplay-Light"), url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Thin.eot");
+  src: local("SF UI Display Thin"), local("SFUIDisplay-Thin"), url("../fonts/SFUIDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Thin.woff") format("woff"), url("../fonts/SFUIDisplay-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Semibold.eot");
+  src: local("SF UI Display Semibold"), local("SFUIDisplay-Semibold"), url("../fonts/SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff"), url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SF UI Display';
+  src: url("../fonts/SFUIDisplay-Bold.eot");
+  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'inglobal';
+  src: url("../fonts/inglobal.eot");
+  src: url("../fonts/inglobal.eot?#iefix") format("embedded-opentype"), url("../fonts/inglobal.woff2") format("woff2"), url("../fonts/inglobal.woff") format("woff"), url("../fonts/inglobal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'inglobal';
+  src: url("../fonts/inglobal-Bold.eot");
+  src: url("../fonts/inglobal-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/inglobal-Bold.woff2") format("woff2"), url("../fonts/inglobal-Bold.woff") format("woff"), url("../fonts/inglobal-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 ul {
   padding: 0;
   margin: 0; }
@@ -13,6 +62,9 @@ button {
 
 body {
   font-family: "SF UI Display", sans-serif; }
+
+h1, h2, h3, span, p {
+  letter-spacing: 0.06em; }
 
 /*!
  * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
@@ -4757,58 +4809,9 @@ template {
 [hidden] {
   display: none; }
 
-@font-face {
-  font-family: 'SF UI Display';
-  src: url("../fonts/SFUIDisplay-Regular.eot");
-  src: local("SF UI Display Regular"), local("SFUIDisplay-Regular"), url("../fonts/SFUIDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Regular.woff") format("woff"), url("../fonts/SFUIDisplay-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: url("../fonts/SFUIDisplay-Light.eot");
-  src: local("SF UI Display Light"), local("SFUIDisplay-Light"), url("../fonts/SFUIDisplay-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Light.woff") format("woff"), url("../fonts/SFUIDisplay-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: url("../fonts/SFUIDisplay-Thin.eot");
-  src: local("SF UI Display Thin"), local("SFUIDisplay-Thin"), url("../fonts/SFUIDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Thin.woff") format("woff"), url("../fonts/SFUIDisplay-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: url("../fonts/SFUIDisplay-Semibold.eot");
-  src: local("SF UI Display Semibold"), local("SFUIDisplay-Semibold"), url("../fonts/SFUIDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Semibold.woff") format("woff"), url("../fonts/SFUIDisplay-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'SF UI Display';
-  src: url("../fonts/SFUIDisplay-Bold.eot");
-  src: local("SF UI Display Bold"), local("SFUIDisplay-Bold"), url("../fonts/SFUIDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SFUIDisplay-Bold.woff") format("woff"), url("../fonts/SFUIDisplay-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'inglobal';
-  src: url("../fonts/inglobal.eot");
-  src: url("../fonts/inglobal.eot?#iefix") format("embedded-opentype"), url("../fonts/inglobal.woff2") format("woff2"), url("../fonts/inglobal.woff") format("woff"), url("../fonts/inglobal.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'inglobal';
-  src: url("../fonts/inglobal-Bold.eot");
-  src: url("../fonts/inglobal-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/inglobal-Bold.woff2") format("woff2"), url("../fonts/inglobal-Bold.woff") format("woff"), url("../fonts/inglobal-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal; }
-
 .header {
   background: url(../img/header_bg.jpg) no-repeat;
-  background-position: center top;
+  background-position: center bottom;
   background-size: cover;
   padding-top: 10px;
   padding-bottom: 50px;
@@ -4846,13 +4849,11 @@ template {
     background: url(../img/phone.png) no-repeat center;
     background-size: cover; }
 
-.top-info {
-  font-family: "SF UI Display", sans-serif; }
-  .top-info a {
-    color: #fff;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
-    transition: .3s; }
+.top-info a {
+  color: #fff;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
 
 .nav {
   margin-top: 25px; }
@@ -5065,7 +5066,6 @@ template {
   margin: 20px 0px; }
 
 .description {
-  font-family: "SF UI Display", sans-serif;
   font-size: 18px;
   color: #333;
   line-height: 29px;
@@ -5110,7 +5110,7 @@ template {
 
 .ellips-1, .ellips-2 {
   position: absolute;
-  background: url(../img/ellips.png) no-repeat;
+  background: url(../img/ellipse.png) no-repeat;
   background-size: cover; }
 
 .ellips-1 {
@@ -5147,28 +5147,24 @@ template {
       color: #FF883F; }
   .what-is-it_description {
     text-align: right;
-    font-family: "SF UI Display", sans-serif;
     font-weight: 300;
     line-height: 40px;
-    padding-left: 50px;
-    letter-spacing: 0.06em; }
+    padding-left: 50px; }
 
 .how-it-works {
   background: url(../img/how-it-works_bg_2.png) no-repeat;
   background-size: cover;
   padding-top: 100px;
-  background-position: center bottom; }
+  background-position: center; }
   .how-it-works_title {
     font-size: 60px;
     line-height: 69px;
-    letter-spacing: 0.06em;
     font-family: "inglobal", sans-serif;
     font-weight: bold;
     padding-left: 50px;
     margin-bottom: 80px; }
   .how-it-works_item {
     padding-left: 90px !important;
-    font-family: "SF UI Display", sans-serif;
     padding-bottom: 70px; }
     .how-it-works_item:nth-child(1) {
       background: url(../img/1.png) no-repeat; }
@@ -5185,20 +5181,11 @@ template {
     .how-it-works_item_title {
       font-size: 30px;
       line-height: 32px;
-      letter-spacing: 0.06em;
       font-weight: 600; }
     .how-it-works_item_description {
       font-size: 20px;
       line-height: 32px;
-      letter-spacing: 0.06em;
       font-weight: 300; }
-  .how-it-works_btn {
-    background: #45A309;
-    border: none;
-    color: #fff;
-    padding: 1.5em 2.5em; }
-    .how-it-works_btn_wrapper {
-      text-align: center; }
 
 .saving {
   height: 100vh;
@@ -5213,6 +5200,18 @@ template {
     .saving_btn_wrapper {
       text-align: center;
       padding-top: 100px; }
+  .saving_title {
+    text-align: left;
+    font-family: "inglobal", sans-serif;
+    color: #FFC035;
+    line-height: 48px;
+    font-size: 36px; }
+    .saving_title::parent {
+      padding-right: 30px !important;
+      background: red; }
+    .saving_title span {
+      text-transform: uppercase;
+      color: #F2AF38; }
 
 /*!
  * Bootstrap Grid v4.3.1 (https://getbootstrap.com/)
