@@ -1,14 +1,16 @@
 .saving
-    height: 100vh
+
     background: url(../img/saving.png) no-repeat
     background-size: cover
-    background-position: center top
+    background-position: center
+    overflow: hidden
+    padding-bottom: 100px
     
     &_btn
-        background: $green
-        border: none
-        color: $white
+        
         padding: 1.5em 3.5em
+        position: relative
+        z-index: 10
 
         &_wrapper
             text-align: center
@@ -16,15 +18,61 @@
     &_title
         text-align: left
         font-family: $second-font
-        color: $yellow
+        
         line-height: 48px
         font-size: 36px
-        
-        &::parent
-            padding-right: 30px !important
-            background: red
-
 
         span
             text-transform: uppercase
             color: $yellow-dark
+
+    &_advice
+        text-align: left
+        line-height: 36px
+        color: rgba(0, 0, 0, 0.4)
+
+    &_text
+        margin-top: 150px
+        margin-bottom: 300px
+
+
+.calc
+    position: absolute
+    width: 640px
+    height: 900px
+    left: -100px
+    top: -108px
+    background: url(../img/chek.png) no-repeat
+    z-index: 5
+    background-size: 100%
+    &_amount
+        width: 30%
+        position: absolute
+        top: 55%
+        right: 7%
+        height: 70px
+        border: 2px solid #CBCBCB
+        font-size: 40px
+        color: #CBCBCB
+        padding-left: .5em
+    &_wrapper
+        position: relative
+    &_btn
+        position: absolute
+        top: 69%
+        right: 16%
+    &_cashback
+        width: 23%
+        position: absolute
+        top: 79%
+        left: 71%
+        height: 44px
+        color: #CBCBCB
+        border: 2px solid #CBCBCB
+        background: $white
+        text-align: center
+        font-size: 34px
+        overflow: hidden
+        padding-left: .3em
+        
+

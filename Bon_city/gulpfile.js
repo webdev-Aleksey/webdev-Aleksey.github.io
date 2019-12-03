@@ -4,7 +4,8 @@ let gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     purgecss = require('gulp-purgecss'),
     browserSync = require('browser-sync').create(),
-    uglify = require('gulp-uglify')
+    uglify = require('gulp-uglify');
+    
     
 
     
@@ -18,7 +19,7 @@ gulp.task('serve', ['sass'], function() {
 
 gulp.task('sass', function() {
     return gulp.src("app/sass/main.sass")
-        .pipe(sass({outputStyle: 'nested'})) // outputStyle: nested expanded compact compressed
+        .pipe(sass({outputStyle: 'compressed'})) // outputStyle: nested expanded compact compressed
         .pipe(autoprefixer({overrideBrowserslist: ['last 8 versions'], cascade: false}))
         .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
@@ -50,6 +51,8 @@ gulp.task('purgecss', function() {
       .pipe(uglify())
       .pipe(gulp.dest('dist/js'))
   });
+
+
 
 
 

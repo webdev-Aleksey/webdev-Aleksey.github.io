@@ -1,17 +1,15 @@
 .header
     background:  url(../img/header_bg.jpg) no-repeat
-    background-position: center bottom
+    background-position: center top
     background-size: cover
     padding-top: 10px
     padding-bottom: 50px
     background-color: #FDB334
-    overflow: hidden
-    margin-bottom: -5px
-  
+    margin-bottom: -1px
+    position: relative
 
     .container
         position: relative
-        min-height: 720px
 
 .logo
     width: 95px
@@ -19,6 +17,7 @@
     background: url(../img/logo.png)
     display: inline-block
     margin-right: 25px
+    margin-left: 25px
 
 .tel
     display: inline-block
@@ -28,7 +27,7 @@
     background: linear-gradient(76.17deg, #C90D0D 21.38%, #FB472F 97.04%)
     padding: .5em 1em .5em 2.5em
     border-radius: 25px
-
+    
     &:before
         content:  ""
         position: absolute
@@ -48,12 +47,15 @@
 
 .nav
     margin-top: 25px
-
+    &-wrapper
+        position: relative
+        z-index: 9
+    
     &-item
         padding: .5em 1em
         position: relative
         z-index: 1
-        font-size: 14px
+        font-size: 16px
         font-weight: bold
 
         &:hover
@@ -113,8 +115,9 @@
 .social
     display: flex
     position:  absolute
-    right: 100px
-    top: 0px
+    right: 18%
+    top: 10px
+    z-index: 11
 
     &-item
         display: flex
@@ -151,9 +154,10 @@
 
 .enter
     position:  absolute
-    right: 0px
-    top: 0px
+    right: 8%
+    top: 10px
     width: 90px
+    z-index: 12
 
     .reg
         position: absolute
@@ -202,29 +206,17 @@
     transition: .3s
 
 .header-info-wrapper
-    margin-bottom: 290px
+    margin-bottom: 160px
 
 .header-info
-    margin-top: 80px
+    margin-top: 150px
 
     &_btn
-        background: linear-gradient(71.29deg, #479F11 10.94%, #69BE13 104.08%)
-        color: $white
-        border: none
-        cursor: pointer
-        transition: .3s
-
+        
         &:hover
-            background: $white
-            color: $orange
             transition: .3s
 
-.btn
-    font-family: $second-font
-    font-size: 15px
-    font-weight: bold
-    padding: 1.5em 1.5em
-    border-radius: 3em
+
 
 .tagline
     color: $black
@@ -239,6 +231,7 @@
     line-height: 29px
     font-weight: 300
     margin-bottom: 30px
+    padding-right: 50px
 
 .cashback
     position: relative
@@ -265,7 +258,21 @@
     background: transparent
     border: 3px solid $green
     color: $green
-    cursor: pointer
+    position: relative
+    overflow: hidden
+    z-index: 40
+    transition: .3s
+    
+    &:hover
+        transition: box-shadow .3s
+        box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 1em 0em rgba(0, 0, 0, 0.0)
+    
+    &:active
+        box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.0), inset 0em 0em 1em 0em rgba(0, 0, 0, 0.5)
+        transition: box-shadow .3s
+    
+        
+
 
     &_wrapper
         align-items: center
