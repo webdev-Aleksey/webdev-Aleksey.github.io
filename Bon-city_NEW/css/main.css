@@ -307,6 +307,14 @@ body {
 .header .hiddenLinks.logged .header__social-log-logged {
   background-color: #f85b2a;
 }
+.hiddenLinks .header__social a{
+  width: 40px;
+  height: 40px;
+}
+.hiddenLinks .header__social a i{
+  line-height: 2.3em;
+
+}
 .header {
   background: url("../img/header-bg.jpg") no-repeat;
   background-size: cover;
@@ -2044,15 +2052,15 @@ footer .appLinks img {
 }
 .header2-title {
   margin-top: 3em;
-  align-items: center;
+  /* align-items: center; */
   padding-left: 4em;
   margin-bottom: 0.5em;
   font-family: 'inglobal';
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
+  -ms-flex-align: center; */
 }
 .header2-title h2 {
   font-weight: bold;
@@ -3234,9 +3242,10 @@ footer .appLinks img {
 .whatIsIt {
   background-color: #fff;
   font-family: inglobal;
-  margin-top: 3em;
+  padding-top: 3em;
   min-height: 440px;
   position: relative;
+  margin-top: -1px;
 }
 .whatIsIt .pigbank {
   width: 368px;
@@ -3467,10 +3476,9 @@ footer .appLinks img {
   .elementary .container .elementary__right {
     display: none;
   }
-  /* .header .header__textWrapper p span:nth-child(3),
-  .header .header__textWrapper p span:nth-child(5) {
-    display: block;
-  } */
+  .header .header__textWrapper p span:nth-child(3) {
+    white-space: nowrap;
+  }
   .popularVendors .popularVendors__content .popularVendors__card:nth-child(2),
   .popularVendors .popularVendors__content .popularVendors__card:nth-child(3),
   .popularVendors .popularVendors__content .popularVendors__card:nth-child(4).popularVendors__card:nth-child(5),
@@ -3670,7 +3678,7 @@ footer .appLinks img {
     background: #fff;
   }
   .header {
-    background-position: left;
+    background-position: left 70% top;
   }
   .header .header__content-left {
     -webkit-box-align: start;
