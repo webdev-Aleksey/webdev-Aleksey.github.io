@@ -97,13 +97,14 @@
               <div class="hiddenApp-bg"></div><span>Скачайте наше <br> мобильное приложение</span><img src="img/google-play.png" alt="..."/>
             </div>
 
-            <h3 class="header__title mob-center">Покупай правильно</h3>
+            <h3 class="header__title mobCenter">Покупай правильно</h3>
 
-            <p class="header__text mob-center">Верни потраченные средства, плати за покупки меньше, позволяй себе больше! Подключай друзей и родственников и плати еще меньше!</p>
+            <p class="header__text mobCenter">Верни потраченные средства, плати за покупки меньше, позволяй себе больше! Подключай друзей и родственников и плати еще меньше!</p>
 
-            <div class="header__btnWrapper mob-center">
-              <button class="btn-green" type="button">Присоединиться</button>
-              <!-- <div class="button-pale-under"></div> -->
+            <div class="header__btnWrapper mobCenter">
+              
+              <a class="btn-green " href="#">Присоединиться</a>
+              
             </div>
 
           </div>
@@ -124,6 +125,7 @@
           <div class="header__joinBlock-btn">
             <div class="button-bright-wrapper">
               <button class="button-bright">Присоединиться</button>
+              
 
             </div>
           </div>
@@ -160,8 +162,8 @@
 
       <section class="howItWorks">
         <div class="container howItWorks__container">
-          <div class="header2-title">
-            <h2 class="mob-center">Как это <br> работает</h2>
+          <div class="howItWorks__title mobCenter">
+            <h2 class="title">Как это <br> работает</h2>
           </div>
           <div class="howItWorks__steps">
             <div class="howItWorks__step">
@@ -233,14 +235,22 @@
 
       <section class="calculator">
         <div class="container">
-          <div class="col-lg-6 calculator__text">
-            <h2 class="calculator__title">
-              Узнай,
-                сколько ты сможешь
-                  сэкономить с Кэшбеком
-            </h2>
+          <div class="calculator__btnWrapper">
+            <a href="#" class="calculator__btn btn-green">Регистрация</a>
           </div>
-          <div class="col-lg-6"></div>
+          <div class="row calculator__contentWrapper">
+            <div class="col-lg-7 calculator__text">
+              <h2 class="calculator__title">
+                Узнай,<br>
+                  сколько <span>ты сможешь
+                    сэкономить</span> с Кэшбеком
+              </h2>
+              <p class="calculator__help">Введи сумму, которую в среднем тратишь<br>
+                на покупки онлайн в месяц </p>
+            </div>
+            <div class="col-lg-5"></div>
+          </div>
+          
         </div>
       </section>
 
@@ -248,13 +258,22 @@
 
       <section class="category">
         <div class="container">
-          <div class="justifyToRight">
-            <div class="header2-title">
-              <h2>Категории<br/>продавцов</h2>
-            </div>
+          <div class="category__title mobCenter">
+            
+              <h2 class="title ">Категории<br/>продавцов</h2>
+            
           </div>
+
+
           <div class="carousel slide hideOnTablet" id="categoriesCarousel" data-ride="carousel">
+            
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+
             <div class="carousel-inner">
+
               <div class="carousel-item active">
                 <div class="row">
                   <div class="col-6 col-lg-3 text-center">
@@ -301,6 +320,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="row">
                   <div class="col-6 col-lg-3 text-center">
@@ -347,8 +367,17 @@
                   </div>
                 </div>
               </div>
-            </div><a class="carousel-control-prev" href="#categoriesCarousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#categoriesCarousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+
+            </div>
+
+            
+
+            <!-- <a class="carousel-control-prev" href="#categoriesCarousel" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>
+
+            <a class="carousel-control-next" href="#categoriesCarousel" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a> -->
+
           </div>
+
           <div class="carousel slide showOnTablet" id="categoriesCarouselTabl" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -457,22 +486,24 @@
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
 
 
       <section class="popularVendors">
-        <div class="popularVendors-bg"></div>
+
         <div class="container">
-          <div class="row d-flex justify-content-end">
-            <div class="col-md-12">
-              <div class="getCashback__title">
-                <h2>Популярные<br/>продавцы </h2>
-              </div>
-            </div>
+          
+
+          <div class="popularVendors__title text-right ">
+            <h2 class="title">Популярные<br>продавцы</h2>
           </div>
-          <div class="popularVendors__content">
+
+
+
+          <div class="popularVendors__content ">
             <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
               <div class="cashback-hot"><span class="blitz">акция!</span>
                 <div class="oldPercent"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span><span class="crossLine"></span><span class="crossLine"></span></div>
@@ -575,12 +606,12 @@
               </div>
             </div>
           </div>
-          <div class="popularVendors__btn">
-            <div class="button-bright-wrapper">
-              <button class="button-bright" type="button">Регистрация</button>
-              <div class="button-bright-under"></div>
-            </div>
+
+
+          <div class="popularVendors__btn text-center">
+            <a class="btn-green" href="#">Весь список</a>
           </div>
+          
         </div>
       </section>
 
@@ -588,13 +619,13 @@
 
       <section class="lastVendors">
         <div class="container">
-          <div class="row d-flex justify-content-start">
+          <!-- <div class="row d-flex justify-content-start">
             <div class="col-md-10">
               <div class="getCashback__title">
                 <h2>Последние <span class='changeHeader'>присоединившиеся </span><br/>продавцы </h2>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="popularVendors__content">
             <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
               <div class="cashback-hot"><span class="blitz">акция!</span>
