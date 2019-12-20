@@ -16,9 +16,11 @@
     <header class="header">
 
       <div class="hiddenLinks logged">
+
         <div class="header__social header__social-pa" data-toggle="tooltip" data-placement="left" title="Вход в систему"><a href="#"><img class="img-fluid" src="img/prof.png" alt="..."/></a></div>
         <div class="header__social header__social-log" data-toggle="tooltip" data-placement="left" title="Регистрация"><a href="#"><img class="img-fluid" src="img/header-log.png" alt="..."/></a></div>
         <div class="logged-buttons">
+
           <div class="header__social-log-logged" data-toggle="tooltip" data-placement="left" title="Разлогиниться"><a href="#"><img class="img-fluid" src="img/log-out.png" alt="..."/></a></div>
           <div class="header__social-pa-logged" data-toggle="tooltip" data-placement="left" title="Перейти в профиль"><a href="#"><img class="img-fluid" src="img/profile-logged.png" alt="..."/></a></div>
         </div>
@@ -37,23 +39,21 @@
 
             <div class="row">
 
-              <div class="col-sm-12 col-lg-4 header__phone">
+              <div class="col-lg-4 header__phone">
                 <div class="image-wrap"></div>
                 <div class="header__number"><a href="tel:+70777777777" class="tel">+7&nbsp;077&nbsp;777&nbsp;77&nbsp;77</a></div>
               </div>
 
-              <div class="col-lg-2 col-md-0 btn-reg"></div>
+              <div class="col-lg-3"></div>
 
-              <div class="offset-sm-0 col-sm-3 header__social__wrapper">
+              <div class="col-lg-3 header__social__wrapper">
                 <div class="header__social"><a href="#"><i class="fab fa-vk"></i></a></div>
                 <div class="header__social"><a href="#"><i class="fab fa-instagram"></i></a></div>
                 <div class="header__social"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
                 <div class="header__social"><a href="#"><i class="fab fa-telegram-plane"></i></a></div>
               </div>
 
-
-
-              <div class="col-sm-1 col-md-2 col-xl-2 header__social__wrapper logged">
+              <div class="col-lg-2 header__social__wrapper logged">
 
                 <div class="header__social-pa" data-toggle="tooltip" data-placement="left" title="Вход в систему"><a href="#"><img class="img-fluid" src="img/prof.png" alt="..."/></a></div>
 
@@ -248,7 +248,15 @@
               <p class="calculator__help">Введи сумму, которую в среднем тратишь<br>
                 на покупки онлайн в месяц </p>
             </div>
-            <div class="col-lg-5"></div>
+            <div class="col-lg-5">
+              <div class="calc_wrapper">
+                <div class="calc">
+                    <input type="text" name="amount" id="calc_amount" class="calc_amount">
+                    <button class="calc_btn btn-green" id="calc_btn">Рассчитать</button>
+                    <span class="calc_cashback" id="calc_cashback"></span>
+                </div>
+            </div>
+            </div>
           </div>
           
         </div>
@@ -495,118 +503,625 @@
       <section class="popularVendors">
 
         <div class="container">
-          
 
           <div class="popularVendors__title text-right ">
             <h2 class="title">Популярные<br>продавцы</h2>
           </div>
 
 
+          <div class="carousel slide" id="categoriesCarousel" data-ride="carousel">
 
-          <div class="popularVendors__content ">
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback-hot"><span class="blitz">акция!</span>
-                <div class="oldPercent"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span><span class="crossLine"></span><span class="crossLine"></span></div>
-                <div class="newPercent"><span class="cashback-persent">
-                     4<span class="cashback-persent-low">%</span></span><span class="cashback-text">кешбэк</span></div>
-                <div class="cashback-bottom"><span>с 20.10.19 до 21.10.19</span></div>
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+
+                <div class="row vendor__wrapper">
+
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                      <div class="vendor stock">
+                          <div class="stock_block">
+                              <div class="stock_cashback">
+                                  <span class="stock_cashback_percent">4</span>
+                                  <div class="stock_old">
+                                      <span class="stock_old_percent">2%</span>
+                                  </div>
+                              </div>
+                              <div class="stock_text">
+                                  <span>акция!</span>
+                                  <p>с 20.10.19 <br>
+                                      до 21.10.19</p>
+                              </div>
+      
+                          </div>
+                          <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                          </div>
+      
+                      </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                    <div class="vendor stock">
+                        <div class="stock_block">
+                            <div class="stock_cashback">
+                                <span class="stock_cashback_percent">4</span>
+                                <div class="stock_old">
+                                    <span class="stock_old_percent">2%</span>
+                                </div>
+                            </div>
+                            <div class="stock_text">
+                                <span>акция!</span>
+                                <p>с 20.10.19 <br>
+                                    до 21.10.19</p>
+                            </div>
+    
+                        </div>
+                        <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                  <div class="vendor stock">
+                      <div class="stock_block">
+                          <div class="stock_cashback">
+                              <span class="stock_cashback_percent">4</span>
+                              <div class="stock_old">
+                                  <span class="stock_old_percent">2%</span>
+                              </div>
+                          </div>
+                          <div class="stock_text">
+                              <span>акция!</span>
+                              <p>с 20.10.19 <br>
+                                  до 21.10.19</p>
+                          </div>
+  
+                      </div>
+                      <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                      </div>
+  
+                  </div>
               </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
+      
+                 
+      
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+
+                      <div class="vendor">
+
+                          <div class="vendor_block">
+
+
+                              <div class="vendor_cashback">
+                                  <span class="vendor_percent">4%</span>
+                              </div>
+
+                              <div class="rating">
+
+
+                                  <div class="rating_tm">
+                                      <span class="rating_tm_title">Рейтинг Bon City</span>
+                                      <div class="stars">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                      </div>
+      
+                                  </div>
+      
+                                  <div class="rating_buyers">
+                                      <span class="rating_buyers_title">Рейтинг покупателей</span>
+                                      <div class="stars">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                          <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                        </svg>
+                                      </div>
+      
+                                  </div>
+                              </div>
+      
+                          </div>
+      
+                          <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+
+                    <div class="vendor">
+
+                        <div class="vendor_block">
+
+
+                            <div class="vendor_cashback">
+                                <span class="vendor_percent">4%</span>
+                            </div>
+
+                            <div class="rating">
+
+
+                                <div class="rating_tm">
+                                    <span class="rating_tm_title">Рейтинг Bon City</span>
+                                    <div class="stars">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                    </div>
+    
+                                </div>
+    
+                                <div class="rating_buyers">
+                                    <span class="rating_buyers_title">Рейтинг покупателей</span>
+                                    <div class="stars">
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                        <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                      </svg>
+                                    </div>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                        <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+
+                  <div class="vendor">
+
+                      <div class="vendor_block">
+
+
+                          <div class="vendor_cashback">
+                              <span class="vendor_percent">4%</span>
+                          </div>
+
+                          <div class="rating">
+
+
+                              <div class="rating_tm">
+                                  <span class="rating_tm_title">Рейтинг Bon City</span>
+                                  <div class="stars">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                  </div>
+  
+                              </div>
+  
+                              <div class="rating_buyers">
+                                  <span class="rating_buyers_title">Рейтинг покупателей</span>
+                                  <div class="stars">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                  </div>
+  
+                              </div>
+                          </div>
+  
+                      </div>
+  
+                      <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                      </div>
+                  </div>
               </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+
+                <div class="vendor">
+
+                    <div class="vendor_block">
+
+
+                        <div class="vendor_cashback">
+                            <span class="vendor_percent">4%</span>
+                        </div>
+
+                        <div class="rating">
+
+
+                            <div class="rating_tm">
+                                <span class="rating_tm_title">Рейтинг Bon City</span>
+                                <div class="stars">
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                </div>
+
+                            </div>
+
+                            <div class="rating_buyers">
+                                <span class="rating_buyers_title">Рейтинг покупателей</span>
+                                <div class="stars">
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                    <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                  </svg>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                    </div>
+                </div>
             </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback-hot"><span class="blitz">акция!</span>
-                <div class="oldPercent"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span><span class="crossLine"></span><span class="crossLine"></span></div>
-                <div class="newPercent"><span class="cashback-persent">
-                     4<span class="cashback-persent-low">%</span></span><span class="cashback-text">кешбэк</span></div>
-                <div class="cashback-bottom"><span>с 20.10.19 до 21.10.19</span></div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+
+              <div class="vendor">
+
+                  <div class="vendor_block">
+
+
+                      <div class="vendor_cashback">
+                          <span class="vendor_percent">4%</span>
+                      </div>
+
+                      <div class="rating">
+
+
+                          <div class="rating_tm">
+                              <span class="rating_tm_title">Рейтинг Bon City</span>
+                              <div class="stars">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                              </div>
+
+                          </div>
+
+                          <div class="rating_buyers">
+                              <span class="rating_buyers_title">Рейтинг покупателей</span>
+                              <div class="stars">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                  <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                </svg>
+                              </div>
+
+                          </div>
+                      </div>
+
+                  </div>
+
+                  <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                  </div>
               </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
+          </div>
+      
+                 
+                </div>
+
+
               </div>
+
+             
             </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback-hot"><span class="blitz">акция!</span>
-                <div class="oldPercent"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span><span class="crossLine"></span><span class="crossLine"></span></div>
-                <div class="newPercent"><span class="cashback-persent">
-                     4<span class="cashback-persent-low">%</span></span><span class="cashback-text">кешбэк</span></div>
-                <div class="cashback-bottom"><span>с 20.10.19 до 21.10.19</span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span></div>
-              <div class="platformRating"><span>Рейтинг Bon City</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="customerRating"><span>Рейтинг покупателей</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span></div>
-              <div class="platformRating"><span>Рейтинг Bon City</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="customerRating"><span>Рейтинг покупателей</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span></div>
-              <div class="platformRating"><span>Рейтинг Bon City</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="customerRating"><span>Рейтинг покупателей</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span></div>
-              <div class="platformRating"><span>Рейтинг Bon City</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="customerRating"><span>Рейтинг покупателей</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span></div>
-              <div class="platformRating"><span>Рейтинг Bon City</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="customerRating"><span>Рейтинг покупателей</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
+
           </div>
 
+         
+
+
+          <!-- <div class="row vendor__wrapper">
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor stock">
+                    <div class="stock_block">
+                        <div class="stock_cashback">
+                            <span class="stock_cashback_percent">4</span>
+                            <div class="stock_old">
+                                <span class="stock_old_percent">2%</span>
+                            </div>
+                        </div>
+                        <div class="stock_text">
+                            <span>акция!</span>
+                            <p>с 20.10.19 <br>
+                                до 21.10.19</p>
+                        </div>
+
+                    </div>
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn btn">Подробнее</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor stock">
+                    <div class="stock_block">
+                        <div class="stock_cashback">
+                            <span class="stock_cashback_percent">4</span>
+                            <div class="stock_old">
+                                <span class="stock_old_percent">2%</span>
+                            </div>
+                        </div>
+                        <div class="stock_text">
+                            <span>акция!</span>
+                            <p>с 20.10.19 <br>
+                                до 21.10.19</p>
+                        </div>
+
+                    </div>
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn btn">Подробнее</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor stock">
+                    <div class="stock_block">
+                        <div class="stock_cashback">
+                            <span class="stock_cashback_percent">4</span>
+                            <div class="stock_old">
+                                <span class="stock_old_percent">2%</span>
+                            </div>
+                        </div>
+                        <div class="stock_text">
+                            <span>акция!</span>
+                            <p>с 20.10.19 <br>
+                                до 21.10.19</p>
+                        </div>
+
+                    </div>
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn btn">Подробнее</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor">
+                    <div class="vendor_block">
+                        <div class="vendor_cashback">
+                            <span class="vendor_percent">4%</span>
+                        </div>
+                        <div class="rating">
+                            <div class="rating_tm">
+                                <span class="rating_tm_title">Рейтинг Bon City</span>
+
+                            </div>
+
+                            <div class="rating_buyers">
+                                <span class="rating_buyers_title">Рейтинг покупателей</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor">
+                    <div class="vendor_block">
+                        <div class="vendor_cashback">
+                            <span class="vendor_percent">4%</span>
+                        </div>
+                        <div class="rating">
+                            <div class="rating_tm">
+                                <span class="rating_tm_title">Рейтинг Bon City</span>
+
+                            </div>
+
+                            <div class="rating_buyers">
+                                <span class="rating_buyers_title">Рейтинг покупателей</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor">
+                    <div class="vendor_block">
+                        <div class="vendor_cashback">
+                            <span class="vendor_percent">4%</span>
+                        </div>
+                        <div class="rating">
+                            <div class="rating_tm">
+                                <span class="rating_tm_title">Рейтинг Bon City</span>
+
+                            </div>
+
+                            <div class="rating_buyers">
+                                <span class="rating_buyers_title">Рейтинг покупателей</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor">
+                    <div class="vendor_block">
+                        <div class="vendor_cashback">
+                            <span class="vendor_percent">4%</span>
+                        </div>
+                        <div class="rating">
+                            <div class="rating_tm">
+                                <span class="rating_tm_title">Рейтинг Bon City</span>
+
+                            </div>
+
+                            <div class="rating_buyers">
+                                <span class="rating_buyers_title">Рейтинг покупателей</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor">
+                    <div class="vendor_block">
+                        <div class="vendor_cashback">
+                            <span class="vendor_percent">4%</span>
+                        </div>
+                        <div class="rating">
+                            <div class="rating_tm">
+                                <span class="rating_tm_title">Рейтинг Bon City</span>
+
+                            </div>
+
+                            <div class="rating_buyers">
+                                <span class="rating_buyers_title">Рейтинг покупателей</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+          </div> -->
 
           <div class="popularVendors__btn text-center">
             <a class="btn-green" href="#">Весь список</a>
@@ -619,70 +1134,163 @@
 
       <section class="lastVendors">
         <div class="container">
-          <!-- <div class="row d-flex justify-content-start">
-            <div class="col-md-10">
-              <div class="getCashback__title">
-                <h2>Последние <span class='changeHeader'>присоединившиеся </span><br/>продавцы </h2>
-              </div>
-            </div>
-          </div> -->
-          <div class="popularVendors__content">
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback-hot"><span class="blitz">акция!</span>
-                <div class="oldPercent"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span><span class="crossLine"></span><span class="crossLine"></span></div>
-                <div class="newPercent"><span class="cashback-persent">
-                     4<span class="cashback-persent-low">%</span></span><span class="cashback-text">кешбэк</span></div>
-                <div class="cashback-bottom"><span>с 20.10.19 до 21.10.19</span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback-hot"><span class="blitz">акция!</span>
-                <div class="oldPercent"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span><span class="crossLine"></span><span class="crossLine"></span></div>
-                <div class="newPercent"><span class="cashback-persent">
-                     4<span class="cashback-persent-low">%</span></span><span class="cashback-text">кешбэк</span></div>
-                <div class="cashback-bottom"><span>с 20.10.19 до 21.10.19</span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback-hot"><span class="blitz">акция!</span>
-                <div class="oldPercent"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span><span class="crossLine"></span><span class="crossLine"></span></div>
-                <div class="newPercent"><span class="cashback-persent">
-                     4<span class="cashback-persent-low">%</span></span><span class="cashback-text">кешбэк</span></div>
-                <div class="cashback-bottom"><span>с 20.10.19 до 21.10.19</span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
-            <div class="popularVendors__card"><img class="popularVendors__logo" src="img/partner-logo.png" alt="..."/><span class="popularVendors__name">-Авоська-</span>
-              <div class="cashback"><span class="cashback-persent">4%</span><span class="cashback-text">кешбэк</span></div>
-              <div class="platformRating"><span>Рейтинг Bon City</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="customerRating"><span>Рейтинг покупателей</span>
-                <div class="rating"><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span><span class="rate-line"></span></div>
-              </div>
-              <div class="button-bright-wrapper">
-                <button class="button-pale">Подробнее</button>
-                <div class="button-pale-under"></div>
-              </div>
-            </div>
+        
+
+          <div class="lastVendors__title">
+            <h2 class="title ">Последние присоединившиеся
+              продавцы</h2>
           </div>
-          <div class="popularVendors__btn">
-            <div class="button-bright-wrapper">
-              <button class="button-bright" type="button">Регистрация</button>
-              <div class="button-bright-under"></div>
+
+          <div class="lastVendors__content">
+            
+            <div class="row vendor__wrapper">
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                  <div class="vendor stock">
+                      <div class="stock_block">
+                          <div class="stock_cashback">
+                              <span class="stock_cashback_percent">4</span>
+                              <div class="stock_old">
+                                  <span class="stock_old_percent">2%</span>
+                              </div>
+                          </div>
+                          <div class="stock_text">
+                              <span>акция!</span>
+                              <p>с 20.10.19 <br>
+                                  до 21.10.19</p>
+                          </div>
+  
+                      </div>
+                      <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                      </div>
+  
+                  </div>
+              </div>
+
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+                <div class="vendor stock">
+                    <div class="stock_block">
+                        <div class="stock_cashback">
+                            <span class="stock_cashback_percent">4</span>
+                            <div class="stock_old">
+                                <span class="stock_old_percent">2%</span>
+                            </div>
+                        </div>
+                        <div class="stock_text">
+                            <span>акция!</span>
+                            <p>с 20.10.19 <br>
+                                до 21.10.19</p>
+                        </div>
+
+                    </div>
+                    <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                    </div>
+
+                </div>
             </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+              <div class="vendor stock">
+                  <div class="stock_block">
+                      <div class="stock_cashback">
+                          <span class="stock_cashback_percent">4</span>
+                          <div class="stock_old">
+                              <span class="stock_old_percent">2%</span>
+                          </div>
+                      </div>
+                      <div class="stock_text">
+                          <span>акция!</span>
+                          <p>с 20.10.19 <br>
+                              до 21.10.19</p>
+                      </div>
+
+                  </div>
+                  <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                  </div>
+
+              </div>
           </div>
+  
+             
+  
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 vendor-wrapper">
+
+                  <div class="vendor">
+
+                      <div class="vendor_block">
+
+
+                          <div class="vendor_cashback">
+                              <span class="vendor_percent">4%</span>
+                          </div>
+
+                          <div class="rating">
+
+
+                              <div class="rating_tm">
+                                  <span class="rating_tm_title">Рейтинг Bon City</span>
+                                  <div class="stars">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                  </div>
+  
+                              </div>
+  
+                              <div class="rating_buyers">
+                                  <span class="rating_buyers_title">Рейтинг покупателей</span>
+                                  <div class="stars">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 19.481 19.481" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 19.481 19.481">
+                                      <path d="m10.201,.758l2.478,5.865 6.344,.545c0.44,0.038 0.619,0.587 0.285,0.876l-4.812,4.169 1.442,6.202c0.1,0.431-0.367,0.77-0.745,0.541l-5.452-3.288-5.452,3.288c-0.379,0.228-0.845-0.111-0.745-0.541l1.442-6.202-4.813-4.17c-0.334-0.289-0.156-0.838 0.285-0.876l6.344-.545 2.478-5.864c0.172-0.408 0.749-0.408 0.921,0z"></path>
+                                    </svg>
+                                  </div>
+  
+                              </div>
+                          </div>
+  
+                      </div>
+  
+                      <div class="vendor_btn_wrapper"><button class="vendor_btn">Подробнее</button>
+                      </div>
+                  </div>
+              </div>
+
+  
+             
+            </div>
+
+          </div>
+
+
+          <div class="lastVendors__btn text-center">
+            <a href="" class="btn-green">Весь список</a>
+          </div>
+
+
         </div>
       </section>
 
@@ -690,32 +1298,39 @@
 
       <section class="getCashback">
         <div class="container">
-          <div class="getCashback__title">
-            <h2>Как получить<br/>свой КЭШ</h2>
+
+          <div class="getCashback__title text-center">
+            <h2 class="title ">Как получить<br/>свой КЭШ</h2>
           </div>
-          <div class="getCashback__steps">
-            <div class="getCashback__step">
+
+          <div class="getCashback__steps row">
+
+            <div class="getCashback__step col-lg-4 col-md-5 text-center">
               <figure class="figure text-center"><img class="figure-img img-fluid rounded" src="img/bag.png" alt="..."/>
                 <figcaption class="getCashback__text">Сделайте покупку в любимом магазине-партнере Bon.City</figcaption>
               </figure>
             </div>
-            <div class="getCashback__step">
+
+            <div class="getCashback__step col-lg-4 col-md-5 text-center">
               <figure class="figure text-center"><img class="figure-img img-fluid rounded" src="img/card.png" alt="..."/>
                 <figcaption class="getCashback__text">Накапливайте кэшбэк-боны в своем личном кабинете</figcaption>
               </figure>
             </div>
-            <div class="getCashback__step">
+
+            <div class="getCashback__step col-lg-4 col-md-5 text-center">
               <figure class="figure text-center"><img class="figure-img img-fluid rounded" src="img/wallet.png" alt="..."/>
                 <figcaption class="getCashback__text">Оплачивайте свои покупки в магазинах-партнерах</figcaption>
               </figure>
             </div>
-            <div class="getCashback-btn">
-              <div class="button-bright-wrapper">
-                <button class="button-bright" type="button">Регистрация</button>
-                <div class="button-bright-under"></div>
-              </div>
-            </div>
+
+            
+           
           </div>
+
+          <div class="getCashback__btn text-center">
+            <a href="" class="btn-green">Регистрация</a>
+          </div>
+
         </div>
       </section>
 
@@ -749,9 +1364,7 @@
         <div class="container">
           <div class="partner__content">
             <div class="partner__content-top">
-              <div class="header2-title">
-                <h2>Партнерская<br/>программа</h2>
-              </div>
+              
             </div>
             <div class="partner__content-bottom"><a href="#">
                 <figure class="figure text-center"><img class="figure-img img-fluid rounded" src="img/pp-letter.png" alt="..."/>
