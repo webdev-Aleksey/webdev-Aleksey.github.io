@@ -1,0 +1,83 @@
+footer
+	background-color: #f9f3f2
+	padding-top: 8em
+	font-style: normal
+	font-weight: normal
+	font-size: 20px
+	line-height: 23px
+	letter-spacing: 0.06em
+
+	.footer__content
+		padding: 0
+		margin-bottom: 0.5em
+
+		h4
+			height: 2em
+
+		a
+			display: block
+			margin: 1em 0
+			text-decoration: none
+			color: #000
+			cursor: pointer
+
+		img
+			margin-top: 0.4em
+
+		&:nth-child(4)
+			text-align: right
+
+	.noMarginLink a
+		margin: 0
+
+	.footer-links
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-orient: horizontal
+		-webkit-box-direction: normal
+		-ms-flex-direction: row
+		flex-direction: row
+		-webkit-box-pack: end
+		-ms-flex-pack: end
+		justify-content: flex-end
+		margin-top: 0.4em
+
+		a
+			display: block
+			width: 34px
+			height: 34px
+			cursor: pointer
+			margin: 0 2px
+			opacity: 0.5
+			-webkit-transition: opacity 0.15s ease
+			-o-transition: opacity 0.15s ease
+			transition: opacity 0.15s ease
+
+			&:hover
+				opacity: 1
+				-webkit-transition: opacity 0.15s ease
+				-o-transition: opacity 0.15s ease
+				transition: opacity 0.15s ease
+
+			&:nth-child(1)
+				background: url("../img/footer-vk.png") center center no-repeat
+				background-size: contain
+
+			&:nth-child(2)
+				background: url("../img/footer-ok.png") center center no-repeat
+				background-size: contain
+
+			&:nth-child(3)
+				background: url("../img/footer-fb.png") center center no-repeat
+				background-size: contain
+
+			&:nth-child(4)
+				background: url("../img/footer-tg.png") center center no-repeat
+				background-size: contain
+
+	.appLinks img
+		width: 106px
+		height: auto
+
+

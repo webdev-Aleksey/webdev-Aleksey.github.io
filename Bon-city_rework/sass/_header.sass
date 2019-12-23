@@ -1,0 +1,533 @@
+.navbar-brand
+	display: -webkit-box !important
+	display: -ms-flexbox !important
+	display: flex !important
+
+.navigation
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	-webkit-box-align: center
+	-ms-flex-align: center
+	align-items: center
+	height: 1.5em
+
+
+	&.bs-tooltip-right .arrow:before
+		border-right-color: #f8d693 !important
+
+	&.bs-tooltip-left .arrow:before
+		border-left-color: #f8d693 !important
+
+	&.bs-tooltip-bottom .arrow:before
+		border-bottom-color: #f8d693 !important
+
+	&.bs-tooltip-top .arrow:before
+		border-top-color: #f8d693 !important
+
+.header__social-pa-logged, .header__social-log-logged
+	display: none
+
+.header__social__wrapper.logged
+	padding-top: 0px !important
+
+.header
+	.header__social__wrapper.logged
+		.header__social-pa, .header__social-log
+			display: none
+
+		.header__social-pa-logged, .header__social-log-logged
+			display: block
+			border-bottom-right-radius: 25px
+			border-bottom-left-radius: 25px
+			-webkit-box-pack: center
+			-ms-flex-pack: center
+			justify-content: center
+			padding: 0.2em
+			height: 2.8em
+
+		.header__social-pa-logged img, .header__social-log-logged img
+			width: 32px
+			height: 32px
+			margin-top: 0.3em
+			-webkit-transition: opacity 0.15s ease
+			-o-transition: opacity 0.15s ease
+			transition: opacity 0.15s ease
+
+		.header__social-pa-logged img:hover, .header__social-log-logged img:hover
+			opacity: 1
+			-webkit-transition: opacity 0.15s ease
+			-o-transition: opacity 0.15s ease
+			transition: opacity 0.15s ease
+
+		.header__social-pa-logged
+			background-color: #37b4ea
+
+		.header__social-log-logged
+			background-color: #f85b2a
+			margin-right: 12px
+
+	.hiddenLinks.logged
+		.header__social-pa, .header__social-log
+			display: none
+
+		.header__social-pa-logged, .header__social-log-logged
+			display: block
+			width: 71px
+			height: 62px
+			border-radius: 45px 0 0 45px
+			padding: 7px 11px
+			margin-bottom: 1px
+
+		.header__social-pa-logged img, .header__social-log-logged img
+			margin-top: 0
+			width: 48px
+			height: 48px
+			opacity: 0.5
+			-webkit-transition: opacity 0.15s ease
+			-o-transition: opacity 0.15s ease
+			transition: opacity 0.15s ease
+
+		.header__social-pa-logged img:hover, .header__social-log-logged img:hover
+			opacity: 1
+			-webkit-transition: opacity 0.15s ease
+			-o-transition: opacity 0.15s ease
+			transition: opacity 0.15s ease
+
+		.header__social-pa-logged
+			background-color: #37b4ea
+			margin: 24px 0 40px
+
+		.header__social-log-logged
+			background-color: #f85b2a
+
+.hiddenLinks .header__social a
+	width: 40px
+	height: 40px
+
+	i
+		line-height: 2.3em
+
+.header
+	background: url("../img/header-bg.jpg") no-repeat
+	background-size: cover
+	background-position: center bottom
+	min-height: 750px
+	overflow-x: hidden
+	background-color: #fa985d
+
+	.navbar-nav .nav-item
+		font-size: 20px
+		list-style: none
+
+	.hiddenApp
+		display: none
+		position: relative
+		min-height: 130px
+		width: 80%
+		-webkit-box-pack: end
+		-ms-flex-pack: end
+		justify-content: flex-end
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		margin-bottom: 50px
+
+		.hiddenApp-bg
+			position: absolute
+			top: 0
+			right: 0
+			width: 150%
+			min-height: 130px
+			background: rgba(255, 255, 255, 0.45)
+
+		span
+			font-weight: bold
+			font-size: 27px
+			line-height: 35px
+			color: #000
+			z-index: 1
+
+		img
+			width: 157px
+			height: auto
+			margin-right: 40px
+			margin-left: 15px
+			z-index: 1
+
+		&:after
+			content: ''
+			min-height: inherit
+			font-size: 0
+
+	.hiddenLinks
+		display: none
+		position: absolute
+		right: 0
+		top: 7em
+		z-index: 5
+
+		.header__social
+			width: 71px
+			height: 62px
+			border-radius: 45px 0 0 45px
+			padding: 7px 11px
+			margin-bottom: 1px
+
+.header__navigation
+	margin-top: 15px
+	margin-left: -25px
+
+.header .header__phone
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	line-height: 3em
+	padding-left: 0px !important
+
+	.image-wrap
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-orient: vertical
+		-webkit-box-direction: normal
+		-ms-flex-direction: column
+		flex-direction: column
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		position: relative
+
+		img
+			width: 44px
+			height: 44px
+
+.tel
+	font-size: 17px
+	position: relative
+	background: linear-gradient(76.17deg, #C90D0D 21.38%, #FB472F 97.04%)
+	padding: .5em 1em .5em 2.5em
+	border-radius: 25px
+	color: #fff
+
+	&:before
+		content: ""
+		position: absolute
+		top: 5px
+		left: 10px
+		width: 25px
+		height: 25px
+		display: block
+		background: url(../img/phone.png) no-repeat center
+		background-size: cover
+
+	&:hover
+		color: #fff
+		text-decoration: none
+
+.header
+	.header__number
+		font-size: 1.3em
+		line-height: 53px
+		color: #127a87
+
+	.header__navLink
+		color: #fff
+		font-size: 16px
+		text-transform: uppercase
+		text-align: center
+		text-decoration: none
+		padding: .5em 1em
+		position: relative
+		z-index: 1
+		font-weight: bold
+
+		&:hover
+			color: #45A309
+			transition: .3s
+
+		&:before
+			content: ""
+			display: block
+			position: absolute
+			background-color: #fff
+			width: 0%
+			height: 100%
+			top: 0
+			right: 0
+			transition: 0.3s
+			z-index: -1
+
+header .header__navLink
+	&:hover:before
+		top: 0
+		left: 0
+		width: 100%
+		position: absolute
+		content: ''
+		height: 100%
+		transition: .3s
+		z-index: -1
+		display: block
+
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		background-color: #45A309
+		width: 0%
+		height: 4px
+		bottom: 0
+		right: auto
+		left: 0
+		transition: 0.3s
+		z-index: -1
+
+.header
+	.header__navLink:hover:after
+		bottom: 0
+		left: auto
+		right: 0
+		width: 100%
+		position: absolute
+		content: ''
+		transition: .3s
+		z-index: -1
+		display: block
+
+	.header__social, .header__social-pa, .header__social-log
+		border-bottom-right-radius: 25px
+		border-bottom-left-radius: 25px
+		-webkit-box-pack: center
+		-ms-flex-pack: center
+		justify-content: center
+		padding: 0.2em
+		height: 2.8em
+
+	.header__social img, .header__social-pa img, .header__social-log img
+		width: 32px
+		height: 32px
+		margin-top: 0.3em
+		opacity: 0.5
+		-webkit-transition: opacity 0.15s ease
+		-o-transition: opacity 0.15s ease
+		transition: opacity 0.15s ease
+
+	.header__social-pa
+		background-color: #37b4ea
+
+		img
+			margin-right: 2px
+
+	.header__social-log
+		margin-right: 10px
+		background-color: #f85b2a
+
+	.hint-log, .hint-pa
+		display: none
+		position: absolute
+		font-size: 10px
+		line-height: 12px
+		width: 100%
+		padding: 5px
+		background-color: #f8d693
+		border-radius: 10px
+
+	.hint-log
+		top: 6px
+		left: -116px
+
+		&:after
+			content: ''
+			display: block
+			width: 12px
+			height: 12px
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg)
+			position: absolute
+			background-color: #f8d693
+			top: 14px
+			right: -6px
+
+	.hint-pa
+		top: 6px
+		left: 156px
+
+		&:after
+			content: ''
+			display: block
+			width: 12px
+			height: 12px
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg)
+			position: absolute
+			background-color: #f8d693
+			top: 14px
+			left: -6px
+
+	.header__social-log:hover .hint-log, .header__social-pa:hover .hint-pa
+		display: block
+
+	.header__btn
+		display: block
+		width: 112px
+		height: 40px
+		background: -webkit-linear-gradient(219.26deg, #ffe8d9 12.05%, #fff 126.49%)
+		background: -o-linear-gradient(219.26deg, #ffe8d9 12.05%, #fff 126.49%)
+		background: linear-gradient(230.74deg, #ffe8d9 12.05%, #fff 126.49%)
+		border: 1px solid #fafafa
+		-webkit-box-sizing: border-box
+		box-sizing: border-box
+		-webkit-box-shadow: inset 1px 6px 25px rgba(0, 0, 0, 0.15)
+		box-shadow: inset 1px 6px 25px rgba(0, 0, 0, 0.15)
+		border-radius: 50px
+		color: #000
+		text-decoration: none
+		text-align: center
+		font-size: 0.8em
+		padding-top: 0.7em
+		margin-top: 14px
+		font-style: normal
+		font-weight: normal
+		-webkit-transition: all 0.4s ease
+		-o-transition: all 0.4s ease
+		transition: all 0.4s ease
+
+		&:active
+			-webkit-box-shadow: 0 0 9px rgba(0, 0, 0, 0.612) inset
+			box-shadow: 0 0 9px rgba(0, 0, 0, 0.612) inset
+			-webkit-transition: all 0.4s ease
+			-o-transition: all 0.4s ease
+			transition: all 0.4s ease
+			outline: none
+
+		&:hover, &:active
+			text-decoration: none
+			color: #000
+
+	.btn-reg
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-pack: end
+		-ms-flex-pack: end
+		justify-content: flex-end
+
+	.header__content-left .header__text
+		width: 100%
+
+	.header__btnWrapper
+		position: relative
+
+	.header__content
+		margin-top: 7em
+
+		h3
+			font-size: 3em
+
+		p
+			font-size: 1.1em
+			margin-bottom: 2.2em
+
+	.header__title
+		margin-bottom: 0.6em
+		font-family: 'inglobal-regular', sans-serif
+
+	.header__man
+		z-index: 1
+
+	.header__joinBlock
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-ms-flex-pack: distribute
+		justify-content: space-around
+		-webkit-box-align: center
+		-ms-flex-align: center
+		align-items: center
+		-webkit-box-orient: horizontal
+		-webkit-box-direction: normal
+		-ms-flex-flow: row nowrap
+		flex-flow: row nowrap
+		background-color: rgba(255, 255, 255, 1)
+		border-radius: 25px
+		padding: 2.5em
+		position: relative
+		z-index: 2
+
+	.header__textWrapper
+		width: 100%
+		padding-right: 1em
+
+		span
+			display: inline
+
+		p
+			width: 100%
+			letter-spacing: 0.06em
+			font-size: 1.5em
+			line-height: 1.8em
+			text-align: center
+			margin-bottom: 0
+
+			span
+				&:nth-child(1), &:nth-child(3)
+					color: #d7783e
+					text-transform: uppercase
+
+			.upper
+				text-transform: uppercase
+
+.header__man
+	top: -1em
+	right: -4em
+	position: relative
+	width: 100%
+	height: 100%
+	-webkit-transform: scale(1.3)
+	-ms-transform: scale(1.3)
+	transform: scale(1.3)
+
+.header__joinBlock
+	bottom: 3em
+
+.header
+	.header__navLink-other-color
+		color: #127a87
+		font-size: 1.3em
+
+	.header__social__wrapper
+		padding-top: 10px
+		display: -webkit-box
+		display: -ms-flexbox
+		display: flex
+		-webkit-box-pack: end
+		-ms-flex-pack: end
+		justify-content: flex-end
+
+.header__social
+	a
+		width: 33px
+		height: 33px
+		border: 2px solid #fff
+		border-radius: 50%
+		color: #fff
+		display: inline-block
+		text-align: center
+
+	i
+		line-height: 1.8em
+
+	a:hover
+		color: #fff
+
+.navMobile
+	display: -webkit-box
+	display: -ms-flexbox
+	display: flex
+	padding: 0
+	-webkit-box-pack: center
+	-ms-flex-pack: center
+	justify-content: center
