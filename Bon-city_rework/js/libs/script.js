@@ -54,15 +54,17 @@ function animateJars() {
 //     }))
 // }), 
 $(document).ready(function() {
-    animateJars()
-}), $(document).scroll(function() {
-    animateJars()
-}), $("#how-it-works-button-back-click").click(function() {
+    animateJars()}),
+    $(document).scroll(function() {
+    animateJars()}),
+    $("#how-it-works-button-back-click").click(function() {
     $(".calculator__header").animate({
         left: "0"
-    }, 2e3, "swing"), $(".calculator__header-2").animate({
+    }, 2e3, "swing"),
+     $(".calculator__header-2").animate({
         left: "6000"
-    }, 2e3, "swing"), setTimeout(function() {
+    }, 2e3, "swing"),
+     setTimeout(function() {
         $(".calc-img-full-1").addClass("calc-img-full-1-set")
     }, 1e3), setTimeout(function() {
         $(".calc-img-full-2").addClass("calc-img-full-2-set")
@@ -104,3 +106,4 @@ $("#accordion").accordion({
             activeHeader: "iconClosed"
         }
     });
+
