@@ -9,9 +9,9 @@
   "author": "Aleksey",
   "license": "ISC",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@fortawesome/fontawesome-free": "^5.12.0",
     "browser-sync": "^2.26.7",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat-css": "^3.1.0",
@@ -22,7 +22,13 @@
     "node-sass": "^4.13.0"
   },
   "dependencies": {
+    "beeper": "^2.0.0",
     "bootstrap": "^4.3.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1"
   }

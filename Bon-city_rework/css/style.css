@@ -84,34 +84,34 @@ a{
   }
   
 
-  .btn-green{
-    background: linear-gradient(67deg, #479F11 10%, #69BE13 100%);
-    color: #fff;
+  .btn-white{
+    background: #fff;
+    color: #000;
     border: none;
     transition: .3s;
     padding: 1.5em 2.5em !important;
     position: relative;
     border-radius: 3em;
-    font-family: 'inglobal', sans-serif;
+    font-family: 'SF UI Display', sans-serif;
     font-weight: bold;
     font-size: 15px;
     display: inline-block;
 }
 
-.btn-green:hover{
+.myBtn:hover{
   box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5);
-  color: #fff;
+  color: #41505f;
 }
 
-.btn-green:active, .btn-green:focus{
+.myBtn:active, .btn-green:focus{
   box-shadow: none;
   outline: none;
 }
  
-.btn-green:before{
+.myBtn:before{
   content: '';
-  width: 120%;
-  height: 150%;
+  width: 118%;
+  height: 140%;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -120,9 +120,25 @@ a{
   transition: 0.3s;
 }
 
-.btn-green:active:before{
+.myBtn:active:before{
   box-shadow: inset 0em 0em 1em 0em rgba(0, 0, 0, 0.5);
 }
+
+.btn-orange{
+  background: #FCA53F;
+  color: #000;
+  border: none;
+  transition: .3s;
+  padding: 1.5em 2.5em !important;
+  position: relative;
+  border-radius: 3em;
+  font-family: 'SF UI Display', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  display: inline-block;
+}
+
+
 
 .textCenter{
   text-align: center;

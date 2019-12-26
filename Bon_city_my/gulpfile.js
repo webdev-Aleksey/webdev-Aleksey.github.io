@@ -1,59 +1,49 @@
-let gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    concatCss = require('gulp-concat-css'),
-    autoprefixer = require('gulp-autoprefixer'),
-    purgecss = require('gulp-purgecss'),
-    browserSync = require('browser-sync').create(),
-    uglify = require('gulp-uglify');
-    
-    
 
-    
-gulp.task('serve', ['sass'], function() {
-    browserSync.init({server: "app/"});
-    gulp.watch("app/sass/*.sass", ['sass']);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
-    gulp.watch("app/js/*.js").on('change', browserSync.reload);
-});   
+const { src, dest, watch, series, parallel } = require('gulp');
+const browsersync = require('browser-sync').create();
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 
 
-gulp.task('sass', function() {
-    return gulp.src("app/sass/main.sass")
-        .pipe(sass({outputStyle: 'expanded'})) // outputStyle: nested expanded compact compressed
-        .pipe(autoprefixer({overrideBrowserslist: ['last 8 versions'], cascade: false}))
-        .pipe(gulp.dest("app/css"))
-        .pipe(browserSync.stream());
-});
+// Compile CSS from Sass.
+function buildStyles() {
+  return src('app/sass/*.sass')
+    .pipe(sass({ outputStyle: 'expanded' }))   //expanded compressed
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7']))
+    .pipe(dest('app/css/'))
+    .pipe(browsersync.reload({ stream: true }));
+}
 
-gulp.task('concat-css', function () {
-    return gulp.src('app/css/*.css')
-      .pipe(concatCss("css/main.css"))
-      .pipe(gulp.dest('dist/'));
-});
-
-
-gulp.task('autoprefixer', function () {
-    gulp.src('app/css/*.css')
-    .pipe(autoprefixer({overrideBrowserslist: ['last 8 versions'], cascade: false}))
-    .pipe(gulp.dest('app/css'))
-});
-
-
-gulp.task('purgecss', function() {
-    return gulp
-      .src('app/css/*.css')
-      .pipe(purgecss({content: [('app/*.html'),('app/js/*js')]}))
-      .pipe(gulp.dest('dist/css'))
+// Watch changes on all *.scss files, lint them and
+// trigger buildStyles() at the end.
+function watchFiles() {
+  watch(
+    ['app/sass/*.sass', 'app/*.html'],
+    { events: 'all', ignoreInitial: false },
+    series(buildStyles, reload)
+  );
+}
+function reload(done){
+    browsersync.reload();
+    done();
+}
+// Init BrowserSync.
+function browserSync(done) {
+  browsersync.init({
+    server: {
+        baseDir: "./app"
+      }, // Change this value to match your local URL.
+    socket: {
+      domain: 'localhost:3000'
+    }
   });
-
-  gulp.task('uglify', function() {
-    gulp.src('app/js/*.js')
-      .pipe(uglify())
-      .pipe(gulp.dest('dist/js'))
-  });
+  done();
+}
 
 
 
-
-
-gulp.task('default', ['serve']);
+// Export commands.
+exports.default = parallel(browserSync, watchFiles); // $ gulp
+exports.sass = buildStyles; // $ gulp sass
+exports.watch = watchFiles; // $ gulp watch
+exports.build = buildStyles; // $ gulp build
