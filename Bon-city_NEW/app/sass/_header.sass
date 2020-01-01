@@ -1,3 +1,4 @@
+
 .header
     background:  url(../img/header_bg.jpg) no-repeat
     background-position: center top
@@ -35,17 +36,7 @@
         padding: .5em 1em .5em 2.5em
         border-radius: 25px
         color: $white
-    
-        &:before
-            content:  ""
-            position: absolute
-            top: 5px
-            left: 10px
-            width: 25px
-            height: 25px
-            display: block
-            background: url(../img/phone.png) no-repeat center
-            background-size: cover
+        
 
     .top-info
         padding-top: 15px
@@ -179,10 +170,6 @@
                     top: 50%
                     transform: translate(-50%,-50%)
 
-
-
-
-
         .reg-enter.logged
             display: block
 
@@ -191,10 +178,39 @@
         padding-top: 120px
     .burger-btn
         cursor: pointer
-
+    .mob-nav.active:before
+        width: 100vw
+        transition: .8s ease-out
     .mob-nav
-        padding-top: 50px
-        display: none
+        padding: 8em 0 0 2em
+        position: fixed
+        left: 0px
+        top: 0px
+        height: 100%
+        background: $white
+        z-index: 1001
+        width: 320px
+        box-shadow: 7px 0px 12px 0px rgba(0,0,0,0.5)
+        transform: translateX(-120%)
+        transition: .6s ease-out
+        &:before
+            content: ''
+            position: absolute
+            
+            top: 0
+            left: 100%
+            width: 0vw
+            height: 100%
+            background: rgba(0,0,0,0.5)
+            transition: .8s ease-out
+            
+
+
+        &.active
+            transform: translateX(0%)
+            transition: .6s ease-out
+
+       
 
         a
             color: $black
@@ -203,43 +219,39 @@
             padding: .5em
             display: inline-block
             position: relative
-            
-            &::before
-                content: ""
-                position: absolute
-                bottom: 0
-                left: .5em
-                width: 7em
-                height: 1px
-                background: $black
-
-
-
-    .header-content
+            margin-bottom: 15px
         
-        &_btn
-            
-            &:hover
-                transition: .3s
+        .close-nav
+            position: absolute
+            top: 20px
+            right: 20px
+
+
 
     &-img
         position: relative
-        display: none
 
-        img
+        .desktop-img
+            display: none
             position: absolute
             top: 0px
             left: 0px
             width: 100%
             transform: scale(1.4)
+        .tablet-img
+            position: absolute
+            width: 100%
+            top: 120px
+            left: -35px
+            transform: scale(1.7)
+
 
     .tagline
-        
         font-size: 50px
         font-family: $second-font
         margin: 20px 0px
-        white-space: nowrap
         font-weight: normal
+        white-space: nowrap
 
     .description
         font-size: 18px
@@ -249,42 +261,30 @@
         margin-bottom: 30px
         padding-right: 50px
 
-    .cashback
+    .bot-block
         position: relative
         background: $white
         border-radius: 20px
         box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1)
-        padding: 1em
+        padding: 0.7em
 
-    .cashback-description
-        text-align: center
-        font-family: $second-font
-        font-size: 25px
-        line-height: 45px
-        font-weight: bold
+        &_description
+            text-align: center
+            font-family: $second-font
+            font-size: 25px
+            line-height: 45px
+            font-weight: bold
 
-        span
-            color: $orange
-            text-transform: uppercase
+            span
+                color: $orange
+                text-transform: uppercase
 
-            &:nth-child(4)
-                color: $black
+                &:nth-child(4)
+                    color: $black
+
+                &:nth-child(2)
+                    white-space: nowrap
 
     
 
-    .ellips-1,.ellips-2
-        position: absolute
-        background: url(../img/ellipse.png) no-repeat
-        background-size: cover
-
-    .ellips-1
-        width: 170px
-        height: 170px
-        left: -105px
-        top: 16px
-
-    .ellips-2
-        right: 110px
-        top: -70px
-        width: 110px
-        height: 110px
+  
