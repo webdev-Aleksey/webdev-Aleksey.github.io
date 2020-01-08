@@ -6,6 +6,7 @@
     padding-bottom: 50px
     background-color: #FDB334
     position: relative
+    overflow: hidden
 
     .logo
         width: 95px
@@ -95,7 +96,7 @@
                 position: absolute
                 background-color: $green
                 width: 0%
-                height: 4px
+                height: 2px
                 bottom: 0
                 right: auto
                 left: 0
@@ -193,6 +194,8 @@
         box-shadow: 7px 0px 12px 0px rgba(0,0,0,0.5)
         transform: translateX(-120%)
         transition: .6s ease-out
+        overflow-y: scroll 
+        
         &:before
             content: ''
             position: absolute
@@ -202,19 +205,20 @@
             width: 0vw
             height: 100%
             background: rgba(0,0,0,0.5)
-            transition: .8s ease-out
+            transition: .5s ease-out
             
 
 
         &.active
             transform: translateX(0%)
-            transition: .6s ease-out
+            transition: .5s ease-out
 
-       
-
+        ul
+            padding-bottom: 30px
+        
+            
         a
             color: $black
-            font-weight: 600
             font-size: 20px
             padding: .5em
             display: inline-block
@@ -222,9 +226,32 @@
             margin-bottom: 15px
         
         .close-nav
+            top: 40px
+            left: 40px
             position: absolute
-            top: 20px
-            right: 20px
+            width: 30px
+            height: 30px
+            &:before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 2px
+                background: $black
+                top: 10px
+                left: 0px
+                transform: rotate(45deg)
+            &:after
+                content: ''
+                position: absolute
+                width: 100%
+                height: 2px
+                background: $black
+                top: 10px
+                left: 0px
+                transform: rotate(-45deg)
+
+                
+                
 
 
 
@@ -234,10 +261,10 @@
         .desktop-img
             display: none
             position: absolute
-            top: 0px
+            top: -80px
             left: 0px
             width: 100%
-            transform: scale(1.4)
+            transform: scale(1.2)
         .tablet-img
             position: absolute
             width: 100%
@@ -285,6 +312,62 @@
                 &:nth-child(2)
                     white-space: nowrap
 
-    
+.popup-tel
+    position: fixed
+    width: 100%
+    min-height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    top: 0
+    z-index: 10000
+    overflow: hidden
+    display: none
+    &_content
+        margin:  0 auto
+        width: 320px
+        background: rgba(255, 255, 255, 0.8)
+        border-radius: 20px
+        height: 250px
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 15%
+        form
+            width: 70%
+            margin: 0 auto
+            input
+                height: 35px
+                border-radius: 10px
+                border: 1px solid $dark-orange
+                padding: 0em 1em
+                font-size: 14px
+                margin-top: 30px
+            button
+                margin-top: 30px
+        &_close
+            position: absolute
+            top: 24px
+            right: 16px
+            width: 20px
+            height: 20px
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 2px
+                transform: rotate(45deg)
+                background: $black
+            &::after
+                content: ''
+                position: absolute
+                width: 100%
+                height: 2px
+                transform: rotate(-45deg)
+                background: $black
+                  
 
+            
+    input, label
+        display: block
+        width: 100%
+        
   

@@ -1,5 +1,5 @@
-$(document).ready(function(){
- 
+$(document).ready(function () {
+
   $('.responsive').slick({
     dots: true,
     infinite: true,
@@ -9,7 +9,15 @@ $(document).ready(function(){
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
-    responsive: [
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -20,10 +28,10 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 620,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToShow: 1,
+          slidesToScroll: 1
         }
       },
       {
@@ -36,10 +44,25 @@ $(document).ready(function(){
     ]
   });
 
-  $('#burger-btn').click(function(){
+  $('#burger-btn').click(function () {
     $('#mob-menu').toggleClass('active');
-    $('#close-nav').click(function(){
+    $('#close-nav').click(function () {
       $('#mob-menu').removeClass('active');
     })
   });
+
+
+  PopUpHide();
+
+  
 });
+
+
+ 
+function PopUpShow() {
+  $("#popup-tel").show();
+}
+
+function PopUpHide() {
+  $("#popup-tel").hide();
+}
