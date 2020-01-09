@@ -82,10 +82,6 @@ button:focus, input:focus {
   outline: none;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: "SF UI Display", sans-serif;
   color: #333;
@@ -97,90 +93,6 @@ h1, h2, h3, span, p {
 
 .container {
   position: relative;
-}
-
-.btn-white {
-  background: #fff;
-  color: #333;
-  border: none;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  padding: 1.5em 2.5em !important;
-  position: relative;
-}
-
-.btn-white:hover {
-  -webkit-box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.5);
-          box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.5);
-}
-
-.btn-white:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.btn-white:before {
-  content: '';
-  width: 120%;
-  height: 150%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-  border-radius: 4em;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.btn-white:active:before {
-  -webkit-box-shadow: inset 0em 0em 1em 0em rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0em 0em 1em 0em rgba(0, 0, 0, 0.5);
-}
-
-.btn-orange {
-  background: #FCA53F;
-  color: #333;
-  border: none;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  padding: 1.5em 2.5em;
-  position: relative;
-}
-
-.btn-orange:hover {
-  -webkit-box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.5);
-          box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.5);
-}
-
-.btn-orange:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.btn-orange:before {
-  content: '';
-  width: 120%;
-  height: 150%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  position: absolute;
-  border-radius: 4em;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.btn-orange:active:before {
-  -webkit-box-shadow: inset 0em 0em 1em 0em rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0em 0em 1em 0em rgba(0, 0, 0, 0.5);
 }
 
 .btn {
@@ -196,6 +108,7 @@ h1, h2, h3, span, p {
   line-height: 69px;
   font-family: "inglobal", sans-serif;
   font-weight: bold;
+  position: relative;
 }
 
 .text-center {
@@ -204,6 +117,48 @@ h1, h2, h3, span, p {
 
 .text-right {
   text-align: right;
+}
+
+.btn-white {
+  background: #fff;
+  color: #333;
+  border: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  padding: 1.5em 2.5em !important;
+  position: relative;
+}
+
+.btn-white:hover {
+  -webkit-box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0);
+          box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0);
+}
+
+.btn-white:active {
+  -webkit-box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5);
+          box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5);
+}
+
+.btn-orange {
+  background: #FCA53F;
+  color: #333;
+  border: none;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  padding: 1.5em 2.5em;
+  position: relative;
+}
+
+.btn-orange:hover {
+  -webkit-box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0);
+          box-shadow: 0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0);
+}
+
+.btn-orange:active {
+  -webkit-box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5);
+          box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5);
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1286,29 +1241,25 @@ template {
   white-space: nowrap;
 }
 
-.seller-top {
-  background: url("../img/seller-top_bg.jpg") center top no-repeat;
-}
-
-.seller-top .card.stock .card_flag {
+.card.stock .card_flag {
   display: block;
 }
 
-.seller-top .card.stock .card_cashback_time {
+.card.stock .card_cashback_time {
   color: #333;
   border-left: 2px solid #FF0000;
   border-top: 2px solid #FF0000;
   border-right: 2px solid #FF0000;
 }
 
-.seller-top .card.stock .card_cashback_percent {
+.card.stock .card_cashback_percent {
   color: #FF0000;
   border-left: 2px solid #FF0000;
   border-bottom: 2px solid #FF0000;
   border-right: 2px solid #FF0000;
 }
 
-.seller-top .card {
+.card {
   display: block;
   width: 300px;
   height: 180px;
@@ -1328,7 +1279,7 @@ template {
   transition: .3s;
 }
 
-.seller-top .card:hover {
+.card:hover {
   -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
           transform: translateY(-10px);
@@ -1339,28 +1290,28 @@ template {
           box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.4);
 }
 
-.seller-top .card_img {
+.card_img {
   position: absolute;
   top: 20px;
   left: 20px;
   width: 20px;
 }
 
-.seller-top .card_title {
+.card_title {
   font-size: 12px;
   font-weight: 300;
   text-align: center;
   display: block;
 }
 
-.seller-top .card_flag {
+.card_flag {
   position: absolute;
   top: -10px;
   right: 10px;
   display: none;
 }
 
-.seller-top .card_flag span {
+.card_flag span {
   position: absolute;
   top: 50%;
   left: 55%;
@@ -1373,7 +1324,7 @@ template {
   font-family: "inglobal", sans-serif;
 }
 
-.seller-top .card_cashback {
+.card_cashback {
   display: inline-block;
   height: 110px;
   width: 100px;
@@ -1383,7 +1334,7 @@ template {
   text-align: center;
 }
 
-.seller-top .card_cashback_time {
+.card_cashback_time {
   border-left: 2px solid #FF883F;
   border-top: 2px solid #FF883F;
   border-right: 2px solid #FF883F;
@@ -1401,7 +1352,7 @@ template {
   color: transparent;
 }
 
-.seller-top .card_cashback_percent {
+.card_cashback_percent {
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -1415,7 +1366,7 @@ template {
   padding-bottom: 12px;
 }
 
-.seller-top .card_cashback_percent:before {
+.card_cashback_percent:before {
   content: 'кешбэк';
   position: absolute;
   font-size: 12px;
@@ -1427,7 +1378,7 @@ template {
   letter-spacing: normal;
 }
 
-.seller-top .card_rating {
+.card_rating {
   position: absolute;
   right: 18px;
   top: 60px;
@@ -1435,37 +1386,181 @@ template {
   font-weight: 300;
 }
 
-.seller-top .card_rating svg {
+.card_rating svg {
   display: inline;
   width: 12px;
   fill: #FF883F;
 }
 
-.seller-top .card_rating_rating-tm span {
+.card_rating_rating-tm span {
   margin-bottom: 5px;
   display: inline-block;
 }
 
-.seller-top .card_rating_rating-buyer span {
+.card_rating_rating-buyer span {
   margin-bottom: 5px;
   display: inline-block;
 }
 
-.seller-top .card_rating_detail {
+.card_rating_detail {
   margin-top: 20px;
 }
 
-.seller-top .card_rating_detail span {
+.card_rating_detail span {
   font-family: "inglobal", sans-serif;
   font-size: 14px;
 }
 
-.seller-top .card_rating_detail svg {
+.card_rating_detail svg {
   width: 22px;
+}
+
+.seller-top .btn-wrapper {
+  padding: 50px 0px;
 }
 
 .seller-top .slick-dots {
   display: none  !important;
+}
+
+.seller-new {
+  background: url(../img/seller-new_bg.jpg) no-repeat center;
+  min-height: 780px;
+  padding-top: 100px;
+}
+
+.seller-new .slick-dots {
+  display: none  !important;
+}
+
+.seller-new .btn-wrapper {
+  padding: 50px 0px;
+}
+
+.get-cashback h2 {
+  margin-bottom: 90px;
+}
+
+.get-cashback_item {
+  margin-bottom: 50px;
+}
+
+.get-cashback_item_img {
+  height: 120px;
+  line-height: 12;
+  margin-bottom: 20px;
+}
+
+.get-cashback_item p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 40px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.get-cashback .btn-wrapper {
+  padding-top: 50px;
+}
+
+.application {
+  background: url(../img/application-bg.jpg) no-repeat center bottom;
+  min-height: 1026px;
+  padding-top: 250px;
+  overflow: hidden;
+}
+
+.application h2 {
+  margin-top: 0px;
+}
+
+.application p {
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.application_img img {
+  position: absolute;
+  top: -270px;
+  left: -170px;
+}
+
+.partner {
+  background: #efefef;
+}
+
+.partner_item {
+  margin-bottom: 60px;
+}
+
+.partner_item:nth-child(1)::before {
+  content: '1';
+}
+
+.partner_item:nth-child(2)::before {
+  content: '2';
+}
+
+.partner_item:nth-child(3)::before {
+  content: '3';
+}
+
+.partner_item::before {
+  position: absolute;
+  top: -40px;
+  left: 25%;
+  font-size: 160px;
+  color: #fff;
+  font-family: "inglobal", sans-serif;
+  font-weight: bold;
+}
+
+.partner_item p {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.partner_item p span {
+  text-transform: uppercase;
+}
+
+.partner_item_img {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.partner .title {
+  margin-top: 0px;
+  margin-bottom: 100px;
+}
+
+.partner .passive-income {
+  position: relative;
+  background: url(../img/passive-income_bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-bottom: 20px;
+  margin-top: 100px;
+}
+
+.partner .passive-income img {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+      -ms-transform: translate(-50%, -50%) scale(0.9);
+          transform: translate(-50%, -50%) scale(0.9);
+}
+
+.partner .passive-income h2 {
+  font-size: 53px;
+  color: #333;
+  font-family: "inglobal", sans-serif;
+  line-height: 61px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /*!
@@ -6021,6 +6116,9 @@ html {
   }
 }
 @media (max-width: 576px) {
+  .title {
+    font-size: 40px;
+  }
   .header .nav {
     margin-left: -60px;
   }
@@ -6066,6 +6164,9 @@ html {
   .saving .saving_btn_wrapper {
     padding-top: 20px;
   }
+  .application {
+    padding-top: 200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -6081,6 +6182,9 @@ html {
     text-align: center !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
+  }
+  .tab-d-none {
+    display: none;
   }
   .header .header-content-wrapper {
     padding-top: 80px;
