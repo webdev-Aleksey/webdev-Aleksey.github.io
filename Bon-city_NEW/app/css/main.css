@@ -84,7 +84,7 @@ button:focus, input:focus {
 
 body {
   font-family: "SF UI Display", sans-serif;
-  color: #333;
+  color: #000;
 }
 
 h1, h2, h3, span, p {
@@ -105,10 +105,22 @@ h1, h2, h3, span, p {
 
 .title {
   font-size: 60px;
-  line-height: 69px;
+  line-height: 1.15em;
   font-family: "inglobal", sans-serif;
   font-weight: bold;
   position: relative;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2em;
 }
 
 .text-center {
@@ -121,7 +133,7 @@ h1, h2, h3, span, p {
 
 .btn-white {
   background: #fff;
-  color: #333;
+  color: #000;
   border: none;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -142,7 +154,7 @@ h1, h2, h3, span, p {
 
 .btn-orange {
   background: #FCA53F;
-  color: #333;
+  color: #000;
   border: none;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -797,7 +809,7 @@ template {
 }
 
 .header .mob-nav a {
-  color: #333;
+  color: #000;
   font-size: 20px;
   padding: .5em;
   display: inline-block;
@@ -818,7 +830,7 @@ template {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #333;
+  background: #000;
   top: 10px;
   left: 0px;
   -webkit-transform: rotate(45deg);
@@ -831,7 +843,7 @@ template {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #333;
+  background: #000;
   top: 10px;
   left: 0px;
   -webkit-transform: rotate(-45deg);
@@ -873,10 +885,6 @@ template {
 }
 
 .header .description {
-  font-size: 18px;
-  color: #333;
-  line-height: 29px;
-  font-weight: 300;
   margin-bottom: 30px;
   padding-right: 50px;
 }
@@ -904,7 +912,7 @@ template {
 }
 
 .header .bot-block_description span:nth-child(4) {
-  color: #333;
+  color: #000;
 }
 
 .header .bot-block_description span:nth-child(2) {
@@ -970,7 +978,7 @@ template {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: #333;
+  background: #000;
 }
 
 .popup-tel_content_close::after {
@@ -981,7 +989,7 @@ template {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background: #333;
+  background: #000;
 }
 
 .popup-tel input, .popup-tel label {
@@ -1022,9 +1030,6 @@ template {
 }
 
 .what-is-it_description {
-  text-align: right;
-  font-weight: 300;
-  line-height: 40px;
   padding-left: 50px;
 }
 
@@ -1082,18 +1087,6 @@ template {
   content: "6";
 }
 
-.how-it-works_item_title {
-  font-size: 30px;
-  line-height: 32px;
-  font-weight: 600;
-}
-
-.how-it-works_item_description {
-  font-size: 20px;
-  line-height: 32px;
-  font-weight: 300;
-}
-
 .saving {
   background: url(../img/saving-bg.jpg) no-repeat;
   background-size: cover;
@@ -1120,12 +1113,6 @@ template {
 .saving_title span {
   text-transform: uppercase;
   color: #F2AF38;
-}
-
-.saving_advice {
-  text-align: left;
-  line-height: 36px;
-  color: rgba(0, 0, 0, 0.4);
 }
 
 .saving_content {
@@ -1246,7 +1233,7 @@ template {
 }
 
 .card.stock .card_cashback_time {
-  color: #333;
+  color: #000;
   border-left: 2px solid #FF0000;
   border-top: 2px solid #FF0000;
   border-right: 2px solid #FF0000;
@@ -1271,7 +1258,7 @@ template {
   margin: 25px auto;
   padding: 15px;
   position: relative;
-  color: #333;
+  color: #000;
   background: #fff;
   cursor: pointer;
   -webkit-transition: .3s;
@@ -1425,6 +1412,7 @@ template {
 
 .seller-new {
   background: url(../img/seller-new_bg.jpg) no-repeat center;
+  background-size: cover;
   min-height: 780px;
   padding-top: 100px;
 }
@@ -1452,9 +1440,6 @@ template {
 }
 
 .get-cashback_item p {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 40px;
   max-width: 280px;
   margin: 0 auto;
 }
@@ -1465,6 +1450,7 @@ template {
 
 .application {
   background: url(../img/application-bg.jpg) no-repeat center bottom;
+  background-size: cover;
   min-height: 1026px;
   padding-top: 250px;
   overflow: hidden;
@@ -1474,11 +1460,6 @@ template {
   margin-top: 0px;
 }
 
-.application p {
-  font-size: 20px;
-  line-height: 44px;
-}
-
 .application_img img {
   position: absolute;
   top: -270px;
@@ -1486,7 +1467,7 @@ template {
 }
 
 .partner {
-  background: #efefef;
+  background: #F9F3F2;
 }
 
 .partner_item {
@@ -1516,9 +1497,6 @@ template {
 }
 
 .partner_item p {
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 40px;
   max-width: 400px;
   margin: 0 auto;
 }
@@ -1549,18 +1527,47 @@ template {
   position: absolute;
   top: 50%;
   left: 30%;
-  -webkit-transform: translate(-50%, -50%) scale(0.9);
-      -ms-transform: translate(-50%, -50%) scale(0.9);
-          transform: translate(-50%, -50%) scale(0.9);
+  -webkit-transform: translate(-50%, -50%) scale(0.8);
+      -ms-transform: translate(-50%, -50%) scale(0.8);
+          transform: translate(-50%, -50%) scale(0.8);
 }
 
 .partner .passive-income h2 {
-  font-size: 53px;
-  color: #333;
+  font-size: 35px;
+  color: #000;
   font-family: "inglobal", sans-serif;
-  line-height: 61px;
+  line-height: 1.2em;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.questions {
+  padding-top: 50px;
+  background: #F9F3F2;
+}
+
+.questions_title {
+  cursor: pointer;
+}
+
+.questions_content {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 35px;
+  padding: 0px 50px;
+  display: none;
+  margin: 20px 0px;
+}
+
+.questions .accordeon {
+  margin-bottom: 100px;
+}
+
+.get-cashback-bottom {
+  min-height: 753px;
+  background: url(../img/get-cashback-bottom_bg.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 200px;
 }
 
 /*!
