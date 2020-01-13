@@ -21,12 +21,7 @@ h1, h2, h3, span, p
 .container
     position: relative
 
-.btn
-    font-size: 15px
-    font-weight: bold
-    border-radius: 3em
-    cursor: pointer
-    display: inline-block
+
 
 .title
     font-size: 60px
@@ -51,26 +46,150 @@ h1, h2, h3, span, p
 .text-right
     text-align: right
 
+// .btn-white
+//     background: $white
+//     color: $black
+//     border: none
+//     transition: .3s
+//     position: relative
+//     &:hover
+//         box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
+//     &:active
+//         box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5)
+
+// .btn-orange
+//     background: $dark-orange
+//     color: $black
+//     border: none
+//     transition: .3s
+//     position: relative
+//     &:hover
+//         box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
+//     &:active
+//         box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5)
+
+.btn
+    font-size: 15px
+    font-weight: bold
+    border-radius: 3em
+    cursor: pointer
+    display: inline-block
+    padding: 1.5em 3.5em 
+    border: none
+    transition: .3s
+    position: relative
+    &:hover
+        box-shadow: 1px 7px 17px rgba(0, 0, 0, 0.15), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
+    &:active
+        box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 1px 2px 5px rgba(0, 0, 0, 0.15)
+
+
 .btn-white
     background: $white
     color: $black
-    border: none
-    transition: .3s
-    padding: 1.5em 2.5em !important
-    position: relative
-    &:hover
-        box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
-    &:active
-        box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5)
 
 .btn-orange
     background: $dark-orange
     color: $black
-    border: none
+ 
+
+
+
+.up-button
+    width: 66px
+    height: 66px
+    border-radius: 100%
+    border: 1px solid $black
+    position: fixed
+    bottom: 5%
+    right: 5%
+    opacity: .3
     transition: .3s
-    padding: 1.5em 2.5em 
-    position: relative
+    background: rgba(0, 0, 0, 0.2)
+    display: none
     &:hover
-        box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
-    &:active
-        box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5)
+        opacity: .7
+        transition: .3s
+    svg
+        transition: .3s
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+
+    &:hover svg:first-child 
+        transform:  translate(-50%,-50%) translateY(-7px)
+        transition: .3s
+    &:hover svg:last-child 
+        transform:  translate(-50%,-50%) translateY(7px)
+        transition: .3s
+
+.show-up-button
+    display: block
+
+
+.popup-tel
+    position: fixed
+    width: 100%
+    min-height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    top: 0
+    z-index: 10000
+    overflow: hidden
+    display: none
+    &_content
+        margin:  0 auto
+        width: 830px
+        background: #FAFAFA
+        border-radius: 20px
+        padding-bottom: 40px
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        top: 15%
+        h3
+            font-size: 35px
+            font-weight: 600
+        form
+            width: 40%
+            margin: 0 auto
+            input
+                height: 35px
+                border-radius: 10px
+                border: 1px solid $dark-orange
+                padding: 0em 1em
+                font-size: 14px
+                margin-top: 30px
+            button
+                margin-top: 30px
+                width: 100%
+                background: #FE7F38
+                color: $white
+        &_close
+            position: absolute
+            top: 24px
+            right: 16px
+            width: 20px
+            height: 20px
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 2px
+                transform: rotate(45deg)
+                background: $black
+            &::after
+                content: ''
+                position: absolute
+                width: 100%
+                height: 2px
+                transform: rotate(-45deg)
+                background: $black
+                  
+
+            
+    input, label
+        display: block
+        width: 100%
+
+
