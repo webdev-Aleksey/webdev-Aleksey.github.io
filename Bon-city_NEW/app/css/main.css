@@ -6465,6 +6465,9 @@ html {
     overflow: hidden;
     padding-left: .3em;
   }
+  .get-cashback-bottom img {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
