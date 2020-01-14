@@ -236,17 +236,10 @@ h1, h2, h3, span, p {
 }
 
 .popup-tel_content {
-  margin: 0 auto;
   width: 50%;
   background: #FAFAFA;
   border-radius: 20px;
   padding-bottom: 40px;
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  top: 15%;
 }
 
 .popup-tel_content h3 {
@@ -310,6 +303,43 @@ h1, h2, h3, span, p {
   width: 100%;
 }
 
+.slick-slider .slick-arrow {
+  position: absolute;
+  bottom: -40px;
+  font-size: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: inline-block;
+  border: 2px solid #000;
+  background: url(../img/arrow.svg) no-repeat center;
+  opacity: .3;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.slick-slider .slick-arrow:hover {
+  opacity: .6;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.slick-slider .slick-prev {
+  left: 70px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.slick-slider .slick-next {
+  right: 70px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 @-webkit-keyframes shake {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -367,14 +397,63 @@ h1, h2, h3, span, p {
           animation-name: shake;
 }
 
-.animated {
+.animated_1s {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated_2s {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated_3s {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated_4s {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated_5s {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated_6s {
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated_7s {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.animated_8s {
   -webkit-animation-duration: 8s;
           animation-duration: 8s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
-.animated.infinite {
+.infinite {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
@@ -979,7 +1058,7 @@ template {
 }
 
 .header .mob-nav {
-  padding: 6em 0 0 2em;
+  padding: 5.5em 0 0 2em;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -1021,7 +1100,7 @@ template {
 }
 
 .header .mob-nav ul {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .header .mob-nav a {
@@ -1030,11 +1109,11 @@ template {
   padding: .5em;
   display: inline-block;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .header .mob-nav .close-nav {
-  top: 40px;
+  top: 30px;
   left: 40px;
   position: absolute;
   width: 30px;
@@ -1295,13 +1374,18 @@ template {
   top: 79%;
   left: 71%;
   height: 44px;
-  color: #CBCBCB;
-  border: 2px solid #CBCBCB;
-  background: #fff;
+  color: #FCA53F;
+  border-bottom: 2px solid #CBCBCB;
   text-align: center;
   font-size: 34px;
-  overflow: hidden;
   padding-left: .3em;
+  font-weight: 600;
+}
+
+.calc .in-a-year {
+  position: absolute;
+  bottom: 128px;
+  right: 223px;
 }
 
 .seller-categories {
@@ -1860,6 +1944,7 @@ template {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  margin: 0px 3px;
 }
 
 .footer_social a:hover {
@@ -6480,6 +6565,9 @@ html {
   .how-it-works_item_title {
     font-size: 26px;
   }
+  .seller-categories_item_title {
+    font-size: 24px;
+  }
   .saving .calc {
     width: 290px !important;
     height: 465px !important;
@@ -6601,17 +6689,16 @@ html {
   }
   .saving .calc_cashback {
     width: 40%;
-    position: absolute;
     top: 87%;
     left: 53%;
     height: 44px;
-    color: #CBCBCB;
-    border: 2px solid #CBCBCB;
-    background: #fff;
     text-align: center;
     font-size: 34px;
-    overflow: hidden;
     padding-left: .3em;
+  }
+  .saving .calc .in-a-year {
+    bottom: 7px;
+    right: 195px;
   }
   .get-cashback-bottom img {
     display: none;

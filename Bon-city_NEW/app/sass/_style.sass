@@ -128,15 +128,11 @@ h1, h2, h3, span, p
     overflow: hidden
     display: none
     &_content
-        margin:  0 auto
         width: 50%
         background: #FAFAFA
         border-radius: 20px
         padding-bottom: 40px
-        position: absolute
-        left: 50%
-        transform: translateX(-50%)
-        top: 15%
+        
         h3
             font-size: 35px
             font-weight: 600
@@ -182,8 +178,30 @@ h1, h2, h3, span, p
         display: block
         width: 100%
 
+.slick-slider
+    .slick-arrow
+        position: absolute
+        bottom: -40px
+        font-size: 0px
+        width: 40px
+        height: 40px
+        border-radius: 100%
+        display: inline-block
+        border: 2px solid $black
+        background: url(../img/arrow.svg) no-repeat center
+        opacity: .3
+        transition: .3s
+        &:hover
+            opacity: .6
+            transition: .3s
 
-
+        
+    .slick-prev
+        left: 70px
+        transform: rotate(-90deg)
+    .slick-next
+        right: 70px
+        transform: rotate(90deg)
 // Анимации
 
 
@@ -206,14 +224,36 @@ h1, h2, h3, span, p
     
 
 
-
 .shake 
   animation-name: shake
 
-.animated 
+
+.animated_1s 
+  animation-duration: 1s
+  animation-fill-mode: both
+
+.animated_2s 
+  animation-duration: 2s
+  animation-fill-mode: both
+.animated_3s 
+  animation-duration: 3s
+  animation-fill-mode: both
+.animated_4s 
+  animation-duration: 4s
+  animation-fill-mode: both
+.animated_5s 
+  animation-duration: 5s
+  animation-fill-mode: both
+.animated_6s 
+  animation-duration: 6s
+  animation-fill-mode: both
+.animated_7s 
+  animation-duration: 7s
+  animation-fill-mode: both
+.animated_8s 
   animation-duration: 8s
   animation-fill-mode: both
 
-.animated.infinite 
+.infinite 
   animation-iteration-count: infinite
 

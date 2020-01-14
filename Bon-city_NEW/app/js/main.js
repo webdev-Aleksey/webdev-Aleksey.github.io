@@ -29,21 +29,28 @@ $(document).ready(function () {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true
+          dots: false,
+          arrows: true
         }
       },
       {
         breakpoint: 620,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false,
+          arrows: true
+          
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          dots: false,
+          arrows: true
+          
         }
       }
     ]
@@ -63,7 +70,7 @@ $(document).ready(function () {
 
 
 
-  PopUpHide();
+  // PopUpHide();
 
 
 
@@ -118,7 +125,7 @@ $(document).ready(function () {
   $('#calc_btn').on('click', function(){
     let amount = $('#calc_amount').val();
     let percent = 0.04
-    let cashback = Math.round(amount*percent);
+    let cashback = Math.round(amount*percent)*12;
     $('#calc_cashback').html(cashback+'р.');
   })
 
