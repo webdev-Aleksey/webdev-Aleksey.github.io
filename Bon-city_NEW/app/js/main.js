@@ -103,6 +103,27 @@ $(document).ready(function () {
 
 
 
+// анимация якоря
+
+  $("#nav").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 600);
+  });
+
+
+  //Калькулятор
+
+  $('#calc_btn').on('click', function(){
+    let amount = $('#calc_amount').val();
+    let percent = 0.04
+    let cashback = Math.round(amount*percent);
+    $('#calc_cashback').html(cashback+'р.');
+  })
+
+
+
 });
 
 // Показать - скрыть попап окно

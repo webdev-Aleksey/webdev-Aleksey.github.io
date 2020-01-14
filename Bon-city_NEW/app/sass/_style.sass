@@ -46,27 +46,7 @@ h1, h2, h3, span, p
 .text-right
     text-align: right
 
-// .btn-white
-//     background: $white
-//     color: $black
-//     border: none
-//     transition: .3s
-//     position: relative
-//     &:hover
-//         box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
-//     &:active
-//         box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5)
 
-// .btn-orange
-//     background: $dark-orange
-//     color: $black
-//     border: none
-//     transition: .3s
-//     position: relative
-//     &:hover
-//         box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
-//     &:active
-//         box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 0em 0em 0.6em 0.3em rgba(0, 0, 0, 0.5)
 
 .btn
     font-size: 15px
@@ -79,9 +59,9 @@ h1, h2, h3, span, p
     transition: .3s
     position: relative
     &:hover
-        box-shadow: 1px 7px 17px rgba(0, 0, 0, 0.15), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
+        box-shadow: 1px 7px 17px rgba(0, 0, 0, 0.4), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
     &:active
-        box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 1px 2px 5px rgba(0, 0, 0, 0.15)
+        box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 1px 2px 5px rgba(0, 0, 0, 0.4)
 
 
 .btn-white
@@ -89,7 +69,7 @@ h1, h2, h3, span, p
     color: $black
 
 .btn-orange
-    background: $dark-orange
+    background: $orange
     color: $black
  
 
@@ -107,6 +87,7 @@ h1, h2, h3, span, p
     transition: .3s
     background: rgba(0, 0, 0, 0.2)
     display: none
+    z-index: 11000
     &:hover
         opacity: .7
         transition: .3s
@@ -128,6 +109,15 @@ h1, h2, h3, span, p
     display: block
 
 
+
+.center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    
+
+
 .popup-tel
     position: fixed
     width: 100%
@@ -139,7 +129,7 @@ h1, h2, h3, span, p
     display: none
     &_content
         margin:  0 auto
-        width: 830px
+        width: 50%
         background: #FAFAFA
         border-radius: 20px
         padding-bottom: 40px
@@ -156,7 +146,7 @@ h1, h2, h3, span, p
             input
                 height: 35px
                 border-radius: 10px
-                border: 1px solid $dark-orange
+                border: 1px solid $orange
                 padding: 0em 1em
                 font-size: 14px
                 margin-top: 30px
@@ -192,4 +182,38 @@ h1, h2, h3, span, p
         display: block
         width: 100%
 
+
+
+// Анимации
+
+
+@keyframes shake 
+    0%
+        transform: translate3d(0, 0, 0)
+    90%
+        transform: translate3d(0, 0, 0)
+    91%,
+    93%,
+    95%,
+    97%,
+    99%
+        transform: translate3d(-1px, 0, 0)
+    92%,
+    94%,
+    96%,
+    98%
+        transform: translate3d(1px, 0, 0)
+    
+
+
+
+.shake 
+  animation-name: shake
+
+.animated 
+  animation-duration: 8s
+  animation-fill-mode: both
+
+.animated.infinite 
+  animation-iteration-count: infinite
 
