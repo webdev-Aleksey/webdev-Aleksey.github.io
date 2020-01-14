@@ -1604,7 +1604,7 @@ template {
 }
 
 .partner {
-  background: #F9F3F2;
+  background: #f3f3f3;
 }
 
 .partner_item {
@@ -1680,7 +1680,8 @@ template {
 
 .questions {
   padding-top: 50px;
-  background: #F9F3F2;
+  padding-bottom: 20px;
+  background: #f3f3f3;
 }
 
 .questions_title {
@@ -1812,7 +1813,7 @@ template {
 }
 
 .footer {
-  background: #F9F3F2;
+  background: #f3f3f3;
   padding-top: 270px;
   padding-bottom: 50px;
 }
