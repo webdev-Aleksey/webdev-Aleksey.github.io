@@ -3,98 +3,258 @@ ul
     margin: 0 
 li
     list-style: none
-
 a
     text-decoration: none
     cursor: pointer
-
 button, input
     outline: none
     user-select: none
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
     &:focus
         outline: none
-
-html
-    overflow-x: hidden
 body
     font-family: $main-font
-    overflow-x: hidden
     color: $black
-
 h1, h2, h3, span, p
     letter-spacing: 0.06em
+
 .container
     position: relative
+
+
+
+.title
+    font-size: 60px
+    line-height: 1.15em
+    font-family: $second-font
+    font-weight: bold
+    position: relative
+
+.subtitle
+    font-size: 30px
+    font-weight: 600
+    line-height: 1.2em
+
+.description
+    font-size: 20px
+    font-weight: 300
+    line-height: 2em
+
+.text-center
+    text-align: center
+
+.text-right
+    text-align: right
+
+
+
+.btn
+    font-size: 15px
+    font-weight: bold
+    border-radius: 3em
+    cursor: pointer
+    display: inline-block
+    padding: 1.5em 3.5em 
+    border: none
+    transition: .3s
+    position: relative
+    &:hover
+        box-shadow: 1px 7px 17px rgba(0, 0, 0, 0.4), inset 0em 0em 0em 0em rgba(0, 0, 0, 0)
+    &:active
+        box-shadow: 0em 0em 0em 0em rgba(0, 0, 0, 0), inset 1px 2px 5px rgba(0, 0, 0, 0.4)
+
 
 .btn-white
     background: $white
     color: $black
-    border: none
-    transition: .3s
-    padding: 1.5em 2.5em !important
-    position: relative
-    
-    &:hover
-        box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5)
-    &:active
-        box-shadow: none
-    
-    
-    &:before
-        content: ''
-        width: 120%
-        height: 150%
-        top: 50%
-        left: 50%
-        transform: translate(-50%,-50%)
-        position: absolute
-        border-radius: 4em
-        transition: 0.3s
-    &:active:before
-        box-shadow: inset 0em 0em 1em 0em rgba(0, 0, 0, 0.5) 
-        
+
 .btn-orange
-    background: $dark-orange
+    background: $orange
     color: $black
-    border: none
+ 
+
+
+
+.up-button
+    width: 66px
+    height: 66px
+    border-radius: 100%
+    border: 1px solid $black
+    position: fixed
+    bottom: 5%
+    right: 5%
+    opacity: .3
     transition: .3s
-    padding: 1.5em 2.5em !important
-    position: relative
+    background: rgba(0, 0, 0, 0.2)
+    display: none
+    z-index: 11000
     &:hover
-        box-shadow:  0em 0.5em 1em 0em rgba(0, 0, 0, 0.5)
-    &:active
-        box-shadow: none
-    
-    
-    &:before
-        content: ''
-        width: 120%
-        height: 150%
+        opacity: .7
+        transition: .3s
+    svg
+        transition: .3s
+        position: absolute
         top: 50%
         left: 50%
         transform: translate(-50%,-50%)
-        position: absolute
-        border-radius: 4em
-        transition: 0.3s
-    &:active:before
-        box-shadow: inset 0em 0em 1em 0em rgba(0, 0, 0, 0.5) 
 
-.btn
+    &:hover svg:first-child 
+        transform:  translate(-50%,-50%) translateY(-7px)
+        transition: .3s
+    &:hover svg:last-child 
+        transform:  translate(-50%,-50%) translateY(7px)
+        transition: .3s
+
+.show-up-button
+    display: block
+
+
+
+.center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
     
-    font-size: 15px
-    font-weight: bold
-    padding: 1.5em 1.5em
-    border-radius: 3em
-    cursor: pointer
-
-.title
-    font-size: 60px
-    line-height: 69px
-    font-family: $second-font
-    font-weight: bold
 
 
-.text-center
-    text-align: center
+.popup-tel
+    position: fixed
+    width: 100%
+    min-height: 100%
+    background: rgba(0, 0, 0, 0.5)
+    top: 0
+    z-index: 10000
+    overflow: hidden
+    display: none
+    &_content
+        width: 50%
+        background: #FAFAFA
+        border-radius: 20px
+        padding-bottom: 40px
+        
+        h3
+            font-size: 35px
+            font-weight: 600
+        form
+            width: 40%
+            margin: 0 auto
+            input
+                height: 35px
+                border-radius: 10px
+                border: 1px solid $orange
+                padding: 0em 1em
+                font-size: 14px
+                margin-top: 30px
+            button
+                margin-top: 30px
+                width: 100%
+                background: #FE7F38
+                color: $white
+        &_close
+            position: absolute
+            top: 24px
+            right: 16px
+            width: 20px
+            height: 20px
+            &::before
+                content: ''
+                position: absolute
+                width: 100%
+                height: 2px
+                transform: rotate(45deg)
+                background: $black
+            &::after
+                content: ''
+                position: absolute
+                width: 100%
+                height: 2px
+                transform: rotate(-45deg)
+                background: $black
+                  
+
+            
+    input, label
+        display: block
+        width: 100%
+
+.slick-slider
+    .slick-arrow
+        position: absolute
+        bottom: -40px
+        font-size: 0px
+        width: 40px
+        height: 40px
+        border-radius: 100%
+        display: inline-block
+        // border: 2px solid $black
+        border: none
+        background: url(../img/arrow.svg) no-repeat center
+        opacity: .3
+        transition: .3s
+        &:hover
+            opacity: .6
+            transition: .3s
+
+        
+    .slick-prev
+        left: 25%
+        transform: rotate(-90deg)
+    .slick-next
+        right: 25%
+        transform: rotate(90deg)
+// Анимации
+
+
+@keyframes shake 
+    0%
+        transform: translate3d(0, 0, 0)
+    90%
+        transform: translate3d(0, 0, 0)
+    91%,
+    93%,
+    95%,
+    97%,
+    99%
+        transform: translate3d(-1px, 0, 0)
+    92%,
+    94%,
+    96%,
+    98%
+        transform: translate3d(1px, 0, 0)
+    
+
+
+.shake 
+  animation-name: shake
+
+
+.animated_1s 
+  animation-duration: 1s
+  animation-fill-mode: both
+
+.animated_2s 
+  animation-duration: 2s
+  animation-fill-mode: both
+.animated_3s 
+  animation-duration: 3s
+  animation-fill-mode: both
+.animated_4s 
+  animation-duration: 4s
+  animation-fill-mode: both
+.animated_5s 
+  animation-duration: 5s
+  animation-fill-mode: both
+.animated_6s 
+  animation-duration: 6s
+  animation-fill-mode: both
+.animated_7s 
+  animation-duration: 7s
+  animation-fill-mode: both
+.animated_8s 
+  animation-duration: 8s
+  animation-fill-mode: both
+
+.infinite 
+  animation-iteration-count: infinite
 
