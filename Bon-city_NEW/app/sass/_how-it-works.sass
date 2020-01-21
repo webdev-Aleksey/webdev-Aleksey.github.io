@@ -1,0 +1,46 @@
+.how-it-works
+    background: url(../img/svg_bg/how-it-works_bg.svg) no-repeat center
+    background-size: cover
+    padding-top: 50px
+    min-height: 968px
+    z-index: 10
+    padding-bottom: 100px
+    
+    h2
+        margin-bottom: 120px
+    
+    
+    &_item
+        padding-left: 90px !important
+        padding-bottom: 70px
+        position: relative
+        z-index: 20
+        span
+            height: 70px
+            display: inline-block
+        &::before
+            position: absolute
+            font-family: $second-font
+            font-size: 110px
+            color: $white
+            font-weight: bold
+            z-index: -10
+            top: -70px
+            left: 50px
+        &:nth-child(1):before
+            content: "1"
+        &:nth-child(2):before
+            content: "2"
+        &:nth-child(3):before
+            content: "3"
+        &:nth-child(4):before
+            content: "4"
+        &:nth-child(5):before
+            content: "5"
+        &:nth-child(6):before
+            content: "6"
+
+            
+    
+
+    

@@ -1,0 +1,145 @@
+
+.card.stock
+    .card_flag
+        display: block
+        
+    .card_cashback_time
+        color: $black
+        border-left: 2px solid $red
+        border-top: 2px solid $red
+        border-right: 2px solid $red
+    .card_cashback_percent
+        color: $red
+        border-left: 2px solid $red
+        border-bottom: 2px solid $red
+        border-right: 2px solid $red
+.card
+    display: block
+    width: 300px
+    height: 180px
+    border: 1px solid $orange-light
+    border-radius: 20px
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.07)
+    margin-bottom: 50px
+    margin: 25px auto
+    padding: 15px
+    position: relative
+    color: $black
+    background: $white
+    cursor: pointer
+    transition: .3s
+    &:hover
+        transform: translateY(-10px)
+        transition: .3s
+        box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.4)
+
+    &_img
+        position: absolute
+        top: 20px
+        left: 20px
+        width: 20px
+    &_title
+        font-size: 12px
+        font-weight: 300
+        text-align: center
+        display: block
+    &_flag
+        position: absolute
+        top: -10px
+        right: 10px
+
+        display: none
+        
+        span
+            position: absolute
+            top: 50%
+            left: 55%
+            transform: translate(-50%,-50%)
+            font-size: 16px
+            color: $white
+            font-weight: bold
+            font-family: $second-font
+
+    &_cashback
+        display: inline-block
+        height: 110px
+        width: 100px
+        position: absolute
+        top: 56px
+        left: 25px
+        text-align: center
+        &_time
+            border-left: 2px solid $orange-light
+            border-top: 2px solid $orange-light
+            border-right: 2px solid $orange-light
+            display: inline-block
+            border-radius: 8px 8px 0px 0px
+            padding: 3px
+            font-size: 10px
+            position: absolute
+            top: 0px
+            left: 50%
+            transform: translateX(-50%)
+            white-space: nowrap
+            color: transparent
+
+        &_percent
+            position: absolute
+            bottom: 0px
+            left: 0px
+            border-left: 2px solid $orange-light
+            border-bottom: 2px solid $orange-light
+            border-right: 2px solid $orange-light
+            border-radius: 0px 0px 20px 20px
+            width: 100%
+            font-size: 50px
+            color: $orange
+            padding-bottom: 12px
+            &:before
+                content: 'кешбэк'
+                position: absolute
+                font-size: 12px
+                bottom: 5px
+                left: 50%
+                transform: translateX(-50%)
+                letter-spacing: normal
+
+    &_rating
+        position: absolute
+        right: 18px
+        top: 60px
+        font-size: 12px
+        font-weight: 300
+        svg
+            display: inline
+            width: 12px
+            fill: $orange
+        &_rating-tm
+
+            span
+                margin-bottom: 5px
+                display: inline-block
+        &_rating-buyer
+
+            span
+                margin-bottom: 5px
+                display: inline-block
+
+        &_detail
+            margin-top: 20px
+            span
+                font-family: $second-font
+                font-size: 14px
+            svg 
+                width: 22px
+.seller-top
+    .btn-wrapper
+        padding: 50px 0px
+        margin-top: 30px  
+    .slick-dots
+        display: none  !important           
+        
+                
+            
+
+    
