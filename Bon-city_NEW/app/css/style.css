@@ -9,7 +9,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #222;
 }
 
 button, input {
@@ -23,12 +23,18 @@ button:active, input:active {
 
 body {
   font-family: "SF UI Display", sans-serif;
-  color: #000;
+  color: #222;
   overflow-x: hidden;
 }
 
 h1, h2, h3, span, p {
   letter-spacing: 0.06em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
 }
 
 .container {
@@ -132,7 +138,7 @@ h1, h2, h3, span, p {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: #000;
+  background: #222;
 }
 
 .popup-tel_content_close::after {
@@ -143,7 +149,7 @@ h1, h2, h3, span, p {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background: #000;
+  background: #222;
 }
 
 .popup-tel input, .popup-tel label {
@@ -241,26 +247,27 @@ h1, h2, h3, span, p {
 
 .btn-white {
   background: #fff;
-  color: #000;
+  color: #222;
 }
 
 .btn-orange {
   background: #FCA53F;
-  color: #000;
+  color: #222;
 }
 
 .btn-appstore, .btn-playmarket {
-  width: 150px;
-  height: 35px;
+  width: 170px;
+  height: 50px;
   border-radius: 5px;
-  border: 1px solid #000;
+  border: 1px solid #222;
   display: inline-block;
-  background: transparent;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 60%;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  z-index: 8888;
 }
 
 .btn-playmarket {
@@ -309,7 +316,7 @@ h1, h2, h3, span, p {
   bottom: -2px;
   left: auto;
   right: 0;
-  background: #000;
+  background: #222;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -329,7 +336,7 @@ h1, h2, h3, span, p {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  border: 1px solid #000;
+  border: 1px solid #222;
   position: fixed;
   bottom: 5%;
   right: 5%;
@@ -384,9 +391,6 @@ h1, h2, h3, span, p {
 }
 
 .header {
-  background: url(../../img/svg_bg/header_bg.svg) no-repeat;
-  background-position: center bottom;
-  background-size: cover;
   position: relative;
   overflow: hidden;
   min-height: 200px;
@@ -437,7 +441,7 @@ h1, h2, h3, span, p {
 }
 
 .header .top-info a {
-  color: #000;
+  color: #222;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -459,48 +463,12 @@ h1, h2, h3, span, p {
 }
 
 .header .nav-item {
-  padding: .5em 1em;
+  padding: .2em 1em;
   position: relative;
   font-size: 16px;
   z-index: 1;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 1em;
-}
-
-.header .nav-item:before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  top: 50%;
-  right: 50%;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  border: 1px solid #000;
-  border-radius: 2em;
-  opacity: 0;
-}
-
-.header .nav-item:hover {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.header .nav-item:hover:before {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  top: 0%;
-  right: 0%;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: .3s;
-  -o-transition: .3s;
-  transition: .3s;
-  opacity: 1;
 }
 
 .header .header-icon {
@@ -639,7 +607,7 @@ h1, h2, h3, span, p {
 }
 
 .header .mob-nav_item {
-  color: #000;
+  color: #222;
   font-size: 20px;
   padding: .5em;
   display: inline-block;
@@ -664,7 +632,7 @@ h1, h2, h3, span, p {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #000;
+  background: #222;
   top: 10px;
   left: 0px;
   -webkit-transform: rotate(45deg);
@@ -677,7 +645,7 @@ h1, h2, h3, span, p {
   position: absolute;
   width: 100%;
   height: 2px;
-  background: #000;
+  background: #222;
   top: 10px;
   left: 0px;
   -webkit-transform: rotate(-45deg);
@@ -699,7 +667,7 @@ h1, h2, h3, span, p {
 }
 
 .footer_item li a {
-  color: #000;
+  color: #222;
   position: relative;
 }
 
@@ -867,8 +835,8 @@ h1, h2, h3, span, p {
 
 @-webkit-keyframes slideInRight-long {
   from {
-    -webkit-transform: translate3d(130%, 0, 0);
-            transform: translate3d(130%, 0, 0);
+    -webkit-transform: translate3d(300%, 0, 0);
+            transform: translate3d(300%, 0, 0);
     visibility: visible;
   }
   to {
@@ -879,8 +847,8 @@ h1, h2, h3, span, p {
 
 @keyframes slideInRight-long {
   from {
-    -webkit-transform: translate3d(130%, 0, 0);
-            transform: translate3d(130%, 0, 0);
+    -webkit-transform: translate3d(300%, 0, 0);
+            transform: translate3d(300%, 0, 0);
     visibility: visible;
   }
   to {
@@ -1094,5 +1062,11 @@ h1, h2, h3, span, p {
   }
   .description {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1340px;
   }
 }

@@ -4893,6 +4893,15 @@ html {
     margin-left: auto !important;
   }
 }
+.header {
+  background: url(../../img/svg_bg/header_bg.svg) no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
+
 .sing-in {
   padding-top: 150px;
   padding-bottom: 100px;
@@ -5160,7 +5169,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  color: #000;
+  color: #222;
   position: relative;
   left: -100%;
   height: 100%;

@@ -30,6 +30,12 @@ body
 h1, h2, h3, span, p
     letter-spacing: 0.06em
 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none
+
 .container
     position: relative
 
@@ -122,6 +128,8 @@ h1, h2, h3, span, p
         display: block
         width: 100%
 
+
+
 .slick-slider
     .slick-arrow
         position: absolute
@@ -199,16 +207,16 @@ h1, h2, h3, span, p
     color: $black
  
 .btn-appstore, .btn-playmarket
-    width: 150px
-    height: 35px
+    width: 170px
+    height: 50px
     border-radius: 5px
     border: 1px solid $black
     display: inline-block
-    background: transparent
     background-position: center
     background-repeat: no-repeat
-
+    background-size: 60%
     transition: .3s
+    z-index: 8888
     
 
 .btn-playmarket   
@@ -305,9 +313,6 @@ h1, h2, h3, span, p
 //HEADER
 
 .header
-	background:  url(../../img/svg_bg/header_bg.svg) no-repeat
-	background-position: center bottom
-	background-size: cover
 	position: relative
 	overflow: hidden
 	min-height: 200px
@@ -363,34 +368,34 @@ h1, h2, h3, span, p
 			display: none
 			padding-bottom: 50px
 		&-item
-			padding: .5em 1em
+			padding: .2em 1em
 			position: relative
 			font-size: 16px
 			z-index: 1
-			font-weight: bold
+			font-weight: 600
 			border-radius: 1em
-			&:before
-				content: ""
-				display: block
-				position: absolute
-				width: 0%
-				height: 0%
-				top: 50%
-				right: 50%
-				transition: 0.3s
-				border: 1px solid $black
-				border-radius: 2em
-				opacity: 0
-			&:hover
-				transition: 0.3s
-				&:before
-					transition: 0.3s
-					top: 0%
-					right: 0%
-					height: 100%
-					width: 100%
-					transition: .3s
-					opacity: 1
+			// &:before
+			// 	content: ""
+			// 	display: block
+			// 	position: absolute
+			// 	width: 0%
+			// 	height: 0%
+			// 	top: 50%
+			// 	right: 50%
+			// 	transition: 0.3s
+			// 	border: 1px solid $black
+			// 	border-radius: 2em
+			// 	opacity: 0
+			// &:hover
+			// 	transition: 0.3s
+			// 	&:before
+			// 		transition: 0.3s
+			// 		top: 0%
+			// 		right: 0%
+			// 		height: 100%
+			// 		width: 100%
+			// 		transition: .3s
+			// 		opacity: 1
 				
 
 			
@@ -662,7 +667,7 @@ h1, h2, h3, span, p
 
 @keyframes slideInRight-long
   from
-    transform: translate3d(130%, 0, 0)
+    transform: translate3d(300%, 0, 0)
     visibility: visible;
   to
     transform: translate3d(0, 0, 0)
@@ -791,3 +796,6 @@ h1, h2, h3, span, p
     .description
         font-size: 16px
 
+@media (min-width: 1400px)
+    .container
+        max-width: 1340px

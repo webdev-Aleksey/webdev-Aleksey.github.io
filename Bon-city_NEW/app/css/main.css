@@ -503,6 +503,17 @@ template {
   display: none;
 }
 
+.header {
+  background: url(../../img/svg_bg/header_bg.svg) no-repeat;
+  background-position: center bottom 60px;
+  background-size: cover;
+}
+
+.header-content {
+  position: relative;
+  z-index: 1000;
+}
+
 .header-img {
   position: relative;
 }
@@ -510,12 +521,12 @@ template {
 .header-img .desktop-img {
   display: none;
   position: absolute;
-  top: -80px;
+  top: 25px;
   left: 0px;
   width: 100%;
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .header-img .tablet-img {
@@ -537,7 +548,7 @@ template {
 }
 
 .header .description {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
   padding-right: 20px;
 }
 
@@ -569,7 +580,7 @@ template {
 }
 
 .header .bot-block_description span:nth-child(4) {
-  color: #000;
+  color: #222;
 }
 
 .header .bot-block_description span:nth-child(2) {
@@ -581,13 +592,13 @@ template {
   padding-bottom: 30px;
 }
 
-.header .app-block .btn-playmarket {
-  margin-right: 10px;
+.header .app-block .btn-playmarket, .header .app-block .btn-appstore {
+  margin: 5px;
 }
 
 .header .header-content-wrapper {
-  padding-bottom: 50px;
-  padding-top: 80px;
+  padding-bottom: 70px;
+  padding-top: 25px;
 }
 
 .what-is-it {
@@ -723,7 +734,7 @@ template {
 }
 
 .calc_amount {
-  width: 30%;
+  width: 32%;
   position: absolute;
   top: 60%;
   right: 12%;
@@ -731,7 +742,8 @@ template {
   border: 2px solid #CBCBCB;
   font-size: 40px;
   color: #CBCBCB;
-  padding-left: .5em;
+  padding-left: .3em;
+  padding-right: .3em;
 }
 
 .calc_wrapper {
@@ -745,16 +757,15 @@ template {
 }
 
 .calc_cashback {
-  width: 23%;
+  width: 31%;
   position: absolute;
   top: 87%;
-  left: 69%;
+  left: 65%;
   height: 44px;
   color: #FCA53F;
   border-bottom: 2px solid #CBCBCB;
   text-align: center;
   font-size: 34px;
-  padding-left: .3em;
   font-weight: 600;
 }
 
@@ -823,7 +834,7 @@ template {
 }
 
 .card.stock .card_cashback_time {
-  color: #000;
+  color: #222;
   border-left: 2px solid #FF0000;
   border-top: 2px solid #FF0000;
   border-right: 2px solid #FF0000;
@@ -848,7 +859,7 @@ template {
   margin: 25px auto;
   padding: 15px;
   position: relative;
-  color: #000;
+  color: #222;
   background: #fff;
   cursor: pointer;
   -webkit-transition: .3s;
@@ -1148,7 +1159,7 @@ template {
 
 .partner .passive-income h2 {
   font-size: 35px;
-  color: #000;
+  color: #222;
   font-family: "inglobal", sans-serif;
   line-height: 1.2em;
   margin-top: 20px;
@@ -5850,11 +5861,11 @@ html {
 }
 @media (max-width: 1200px) {
   .header .header-img .desktop-img {
-    top: 110px;
-    left: -24px;
-    -webkit-transform: scale(1.7);
-        -ms-transform: scale(1.7);
-            transform: scale(1.7);
+    top: 140px;
+    left: 0px;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
   }
   .saving .calc {
     left: -129px;
@@ -5949,10 +5960,6 @@ html {
   .how-it-works_item span {
     height: auto;
   }
-  .header .app-block a {
-    display: inline-block;
-    margin: 0px 5px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -6030,16 +6037,10 @@ html {
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .header .header-img .desktop-img {
-    top: 30px;
+    top: 15px;
     left: 15px;
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1340px;
+    -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+            transform: scale(1.3);
   }
 }
