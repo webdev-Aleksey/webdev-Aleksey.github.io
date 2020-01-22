@@ -1,0 +1,59 @@
+.partner
+    background: #f3f3f3
+    padding-top: 200px
+    margin-top: -200px
+    position: relative
+    z-index: 100
+    &_item
+        margin-bottom: 60px
+        &:nth-child(1)::before
+            content: '1'
+        &:nth-child(2)::before
+            content: '2'
+        &:nth-child(3)::before
+            content: '3'
+            
+        &::before
+            position: absolute
+            top: -40px
+            left: 25%
+            font-size: 160px
+            color: $white
+            font-family: $second-font
+            font-weight: bold
+        p
+            
+            max-width: 400px
+            margin: 0 auto
+            span
+                text-transform: uppercase
+        &_img
+            margin-bottom: 40px
+            position: relative
+            
+
+                
+    .title
+
+        margin-top: 0px
+        margin-bottom: 100px
+    
+    .passive-income
+        position: relative
+        background: url(../img/passive-income_bg.jpg) no-repeat center
+        background-size: cover
+        padding-bottom: 20px
+        margin-top: 100px
+        img
+            position: absolute
+            top: 50%
+            left: 30%
+            transform: translate(-50%, -50%) scale(0.8)
+        h2
+            font-size: 35px
+            color: $black
+            font-family: $second-font
+            line-height: 1.2em
+            margin-top: 20px
+            margin-bottom: 20px
+           
