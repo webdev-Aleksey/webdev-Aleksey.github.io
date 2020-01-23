@@ -92,13 +92,13 @@
 
                     <nav class="nav d-lg-block" id="nav" style="display: none;">
                         <ul>
-                            <li><a href="" class="nav-item">О нас</a></li>
-                            <li><a href="#saving" class="nav-item">Калькулятор</a></li>
-                            <li><a href="" class="nav-item">Партнёры</a></li>
-                            <li><a href="" class="nav-item">Акции</a></li>
-                            <li><a href="" class="nav-item">Новости</a></li>
-                            <li><a href="" class="nav-item">Вопросы</a></li>
-                            <li><a href="" class="nav-item">Контакты</a></li>
+                            <li><a href="" class="underline nav-item">О нас</a></li>
+                            <li><a href="#saving" class="underline nav-item">Калькулятор</a></li>
+                            <li><a href="" class="underline nav-item">Партнёры</a></li>
+                            <li><a href="" class="underline nav-item">Акции</a></li>
+                            <li><a href="" class="underline nav-item">Новости</a></li>
+                            <li><a href="" class="underline nav-item">Вопросы</a></li>
+                            <li><a href="" class="underline nav-item">Контакты</a></li>
 
                         </ul>
                     </nav>
@@ -218,14 +218,13 @@
 
     </header>
 
+    <main>
 
-        <div class="sing-in">
+        <div class="signup-signin d-md-block">
 
             <div class="container d-flex justify-content-center">
-                <div class="container1 " id="container1">
-    
-    
-    
+
+                <div class="signup-signin-container" id="signup-signin-container">
     
                     <div class="form-container sign-up-container">
                         <form action="#">
@@ -245,13 +244,9 @@
                         </form>
                     </div>
                     
-                
-                
                     <div class="form-container sign-in-container">
                         <form action="#">
                             <h1>Вход</h1>
-                        
-                            
                             <input type="email" placeholder="Email" />
                             <input type="password" placeholder="Пароль" />
                             <a href="#">Забыли свой пароль?</a>
@@ -277,10 +272,11 @@
                             </div>
                         </div>
                     </div>
-        
-        
-        
+
+
                 </div>
+
+
             </div>
 
             
@@ -288,6 +284,51 @@
 
 
         </div>
+
+
+        <div class="signup-signin-mob d-md-none">
+            <div class="container">
+
+                <div class="signup-signin-mob-container">
+
+                    <div class="cross-1"></div>
+                    <div class="cross-2"></div>
+
+                    <div class="form-container sign-in-container  ">
+                        <h2 id="enter">Вход</h2>
+                        <form action="#" class="">
+                            <input class="mail" type="email" placeholder="Email" />
+                            <input class="password" type="password" placeholder="Пароль" />
+                            <a href="#">Забыли свой пароль?</a>
+                            <button class="btn btn-orange enter-btn">Войти</button>
+                        </form>
+                    </div>
+
+                    <div class="form-container sign-up-container accordion_item">
+                        <h2 id="sign-up-title" class="title_block">Регистрация</h2>
+                        <form id="form-sing-up" class="info" action="#">
+                            <input type="text" placeholder="Логин" />
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Пароль"/>
+                            <input type="password" placeholder="Подтвердите пароль"/>
+                        
+                            <div class="checkbox">
+                                <input type="checkbox" id="singInCheckboxMob">
+                                <label for="singInCheckboxMob">Ознакомлен c <a href="">договором</a><br> публичной оферты</label>
+                            </div>
+                            
+                            <button class="btn btn-white sing-in-btn">Зарегистрироваться</button>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+        
     
     
 
